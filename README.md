@@ -1,5 +1,7 @@
 # caroolive-app
-Driver service client based on OBD2 diagnostics and dashcam functions
+- Driver service client app integrating OBD2 diagnostics and dashcam functions
+- OBD library and video blackbox library included
+- Test server connection for connected car services
 
 # OBD2 related features
 - OBD library for connecting bluetooth OBD devices (ELM327 compatible) and reading PID data
@@ -8,13 +10,25 @@ Driver service client based on OBD2 diagnostics and dashcam functions
 - Read and clear DTC codes as well as OBD PIDs
 - Read VIN code 
 
+<br>
+<img src="/screenshots/driving_mode.png" width="600px">
+<img src="/screenshots/driving_details.png" width="600px">
+<br>
+
+
 # Dashcam video
 - Video processing library for recording, splitting, partial-extracting video
 - Two types of video recording mode: file recording and continuous recording
 - Emergency detection and sharing emergency situation by phone-call, SMS and YouTube
 - Integrating with OBD data: saving trip data to SMI formatted files
 - Dedicated video player combining video, driving data and map
-
+  
+<br>
+<img src="/screenshots/dashcam.png" width="600px">
+<img src="/screenshots/video_play.png" width="600px">
+<br>
+  
+  
 # Connected car service (beta)
 - Google/Facebook authentication and log-in 
 - Uploading OBD data for further analysis and statistics
@@ -23,6 +37,11 @@ Driver service client based on OBD2 diagnostics and dashcam functions
 - Additional features such as driving point, level and ranking for Korea/Japan users (UTC+09:00 time zone)
 - [Beta service link](http://www.carooplus.com:9801)
 
+<br>
+<img src="/screenshots/service_screens.png" width="640px">
+<br>
+
+  
 # Credits
 - [Caldroid](https://github.com/roomorama/Caldroid)
 
