@@ -21,7 +21,7 @@ Driver service client based on OBD2 diagnostics and dashcam functions
 - Trip statistics, fuel economy, driving pattern analysis
 - Car diagnostics history and car status analysis
 - Additional features such as driving point, level and ranking for Korea/Japan users (UTC+09:00 time zone)
-- [Beta service link (Korean)](http://www.caroolive.com)
+- [Beta service link (Korean)](http://www.carooplus.com:9801)
 
 # Credits
 - [Caldroid](https://github.com/roomorama/Caldroid)
