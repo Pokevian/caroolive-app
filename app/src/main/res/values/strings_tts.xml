@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="tts_hello_driving_default">주행을 시작합니다. 안전운전하세요.</string>
+    <string name="tts_hello_driving_work">좋은 아침입니다. 안전운전하세요.</string>
+
+    <string name="tts_googbye_driving_home">주행을 종료합니다. 즐거운 저녁되세요.</string>
+    <string name="tts_goodbye_driving_default">주행을 종료합니다. 수고하셨습니다.</string>
+
+    <string name="tts_mil">차량고장 코드가 감지되었습니다. 확인 후 정비하세요.</string>
+    <string name="tts_overspeed">과속운전입니다. 속도를 줄이세요.</string>
+    <string name="tts_long_term_overspeed">오랫동안 과속 중입니다. 속도를 줄이세요.</string>
+    <string name="tts_long_term_idling">공회전 시간이 %d분을 초과했습니다. 환경을 생각해 주세요.</string>
+    <string name="tts_harsh_accel">급가속 하셨습니다. 안전운전하세요.</string>
+    <string name="tts_harsh_brake">급감속 하셨습니다. 안전운전하세요.</string>
+    <string name="tts_harsh_start">급출발 하셨습니다.</string>
+    <string name="tts_harsh_stop">급정차 하셨습니다.</string>
+    <string name="tts_harsh_left_turn">급좌회전 하셨습니다.</string>
+    <string name="tts_harsh_right_turn">급우회전 하셨습니다.</string>
+    <string name="tts_harsh_u_turn">급U턴 하셨습니다.</string>
+    <string name="tts_gear_shift_n">신호대기시 기어를 중립으로 하면 연료를 절감할 수 있습니다.</string>
+
+</resources>

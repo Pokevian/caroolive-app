@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/detail_info_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_detail_info"
+        android:button="@null"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:checked="false" />
+
+    <ImageView
+        android:id="@+id/btn_quick_launch_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/detail_info_btn"
+        android:src="@drawable/btn_launcher_navi" />
+
+    <ImageView
+        android:id="@+id/iv_btn_ers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@id/btn_quick_launch_navi"
+        android:src="@drawable/btn_ers" />
+
+    <ImageButton
+        android:id="@+id/btn_diagnostic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/detail_info_btn"
+        android:background="@drawable/btn_launcher_dtc" />
+
+    <ImageView
+        android:id="@+id/iv_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/btn_diagnostic"
+        android:src="@drawable/btn_exit" />
+</RelativeLayout>

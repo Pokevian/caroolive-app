@@ -1,0 +1,54 @@
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<style name="clusterMeterText" parent="clusterText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">75dp</item>
+    </style>-->
+
+    <!--<style name="clusterMeterUnitText" parent="clusterText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+    </style>-->
+
+    <!--<style name="clusterValueText" parent="clusterText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>-->
+
+    <!--<style name="clusterUnitText" parent="clusterText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+    </style>-->
+
+    <!--<style name="centerMeterText" parent="clusterText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>-->
+
+   <!-- <style name="centerUnitText" parent="clusterText">
+        <item name="android:textSize">8dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>-->
+
+</resources>

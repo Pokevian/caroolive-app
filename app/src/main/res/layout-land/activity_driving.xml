@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/iv_bg_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_main" />
+
+    <ImageView
+        android:id="@+id/iv_btn_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_bg_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/btn_preview" />
+
+    <fragment
+        android:id="@+id/center_fragment"
+        android:name="com.pokevian.app.smartfleet.ui.driving.IndicatorFragment"
+        android:layout_width="@dimen/center_width"
+        android:layout_height="@dimen/center_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/center_margin_bottom"
+        tools:layout="@layout/fragment_driving_indicator" />
+
+    <fragment
+        android:id="@+id/detail_info_fragment"
+        android:name="com.pokevian.app.smartfleet.ui.driving.DrivingDetailInfoFragment"
+        android:layout_width="@dimen/detail_info_width"
+        android:layout_height="@dimen/detail_info_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/detail_info_margin_bottom"
+        tools:layout="@layout/fragment_driving_detail_info" />
+
+    <fragment
+        android:id="@+id/obd_fragment"
+        android:name="com.pokevian.app.smartfleet.ui.driving.ObdClusterFragment"
+        android:layout_width="@dimen/cluster_width"
+        android:layout_height="@dimen/cluster_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cluster_margin_bottom"
+        android:layout_marginRight="@dimen/cluster_margin_left_right"
+        android:layout_toLeftOf="@id/center_fragment"
+        tools:layout="@layout/fragment_driving_obd" />
+
+    <fragment
+        android:id="@+id/trip_fragment"
+        android:name="com.pokevian.app.smartfleet.ui.driving.TripClusterFragment"
+        android:layout_width="@dimen/cluster_width"
+        android:layout_height="@dimen/cluster_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cluster_margin_bottom"
+        android:layout_marginLeft="@dimen/cluster_margin_left_right"
+        android:layout_toRightOf="@id/center_fragment"
+        tools:layout="@layout/fragment_driving_trip" />
+
+    <fragment
+        android:id="@+id/bottom_fragment"
+        android:name="com.pokevian.app.smartfleet.ui.driving.BottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/bottom_margin_bottom"
+        tools:layout="@layout/fragment_driving_bottom" />
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <!--<include
+        android:id="@+id/date_pane"
+        layout="@layout/item_date_pan" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/pattern_time"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/pattern_harsh_accel"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/pattern_top_speed"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/pattern_distance"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/pattern_harsh_decel"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/pattern_avg_speed"
+                layout="@layout/item_pattern_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="121dp"
+            android:layout_height="121dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/donut_0" />
+
+            <TextView
+                android:id="@+id/driving_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#8dbd4c"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                tools:text="80" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b9b9b9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_pattern_alert"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/pattern_danger"
+            android:textColor="#686868"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pattern_line_red" />
+
+        <include
+            android:id="@+id/pattern_over_speed"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <include
+            android:id="@+id/pattern_harsh_speed"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_pattern_eco"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/pattern_eco"
+            android:textColor="#686868"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pattern_line_green" />
+
+        <include
+            android:id="@+id/pattern_idling"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <include
+            android:id="@+id/pattern_eco_speed"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <include
+            android:id="@+id/pattern_fuel_cut"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <include
+            android:id="@+id/pattern_engine_load"
+            layout="@layout/item_pattern_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

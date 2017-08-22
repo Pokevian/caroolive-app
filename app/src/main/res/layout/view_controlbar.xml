@@ -1,0 +1,233 @@
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/date_pane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#eeeeee"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/icon_calendar"
+            android:gravity="center_vertical"
+            android:textColor="#666666"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_chart_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_chart_list"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#d6d6d6"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/select_chart_period_pane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/date_pane"
+        android:background="#dfdfdf"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_chart_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_chart_period_day"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/tab_divide_02" />
+
+            <RadioButton
+                android:id="@+id/btn_chart_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_chart_period_week"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/tab_divide_02" />
+
+            <RadioButton
+                android:id="@+id/btn_chart_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_chart_period_month"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/select_video_period_pane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/date_pane"
+        android:background="#cccccc"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_video_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_video_period_day"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/tab_divide_02" />
+
+            <RadioButton
+                android:id="@+id/btn_video_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_video_period_week"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/tab_divide_02" />
+
+            <RadioButton
+                android:id="@+id/btn_video_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_video_period_month"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/tab_divide_02" />
+
+            <RadioButton
+                android:id="@+id/btn_video_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_general_period"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/tripmon_video_period_all"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/select_notice_category_pane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/date_pane"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#777700"
+            android:orientation="horizontal">
+
+
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

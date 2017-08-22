@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="63dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_center_connect"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_obd"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/check_obd" />
+
+        <ImageView
+            android:id="@+id/iv_mil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/check_mil" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/indicator_pane"
+        android:layout_width="248dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_center_indicator"
+        android:layout_marginLeft="10dp"
+        android:stretchColumns="0,1,2">
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_volt_off" />
+            <ImageView
+                android:id="@+id/iv_coolant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_temp_off" />
+
+            <ImageView
+                android:id="@+id/iv_eco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_eco_off" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/cb_idle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_idle" />
+
+            <ImageView
+                android:id="@+id/cb_harsh_accel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_harsh_accel" />
+            <ImageView
+                android:id="@+id/cb_harsh_brake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_harsh_brake" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

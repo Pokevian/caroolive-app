@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8dbd4c"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_weekly_record" />
+
+        <ImageView
+            android:id="@+id/btn_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/btn_weekly_rank"
+            tools:background="#11ff00" />
+
+        <ImageView
+            android:id="@+id/btn_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/btn_ranking"
+            android:src="@drawable/btn_weekly_pattern"
+            tools:background="#110022" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btn_ranking"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        tools:background="#0000ff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#b5d48a" />
+
+            <include
+                android:id="@+id/center_circle"
+                layout="@layout/item_main_center_circle" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#b5d48a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/mainTitleText"
+                android:text="@string/main_score" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/weekly_score"
+                    style="@style/mainValueText"
+                    android:text="@string/empty_int_value"
+                    tools:text="127" />
+
+                <TextView
+                    style="@style/mainUnitText"
+                    android:text="@string/drv_point" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/mainTitleText"
+                android:text="@string/drv_count" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/drv_count"
+                    style="@style/mainValueText"
+                    android:text="@string/empty_int_value"
+                    tools:text="99320000" />
+
+                <TextView
+                    style="@style/mainUnitText"
+                    android:text="@string/rank_drv_times" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/mainTitleText"
+                android:text="@string/driving_average_fuel_economy" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/fuel_ecocomy"
+                    style="@style/mainValueText"
+                    android:text="@string/empty_float_value"
+                    tools:text="99.9" />
+
+                <TextView
+                    style="@style/mainUnitText"
+                    android:text="@string/fuel_economy_unit_kpl" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/mainUnitText"
+                android:text="@string/drv_distance" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/drv_distance"
+                    style="@style/mainValueText"
+                    android:text="@string/empty_float_value"
+                    tools:text="999.9" />
+
+                <TextView
+                    style="@style/mainUnitText"
+                    android:text="@string/distance_unit_km" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

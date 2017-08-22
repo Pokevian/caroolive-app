@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dtc_group01_title">Air/Fuel</string>
+    <string name="dtc_group02_title">Injection</string>
+    <string name="dtc_group03_title">Ignition</string>
+    <string name="dtc_group04_title">Speed</string>
+    <string name="dtc_group05_title">Circuits</string>
+    <string name="dtc_group06_title">Transmission</string>
+    <string name="dtc_group07_title">Powertrain</string>
+    <string name="dtc_group08_title">Body</string>
+    <string name="dtc_group09_title">Chassis</string>
+    <string name="dtc_group10_title">Network</string>
+
+    <string name="dtc_group01_text">Problems detected on the fuel and intake air measurements, emissions control systems, etc.</string>
+    <string name="dtc_group02_text">Problems detected on the fuel injection device and the supercharger (turbo) related system.</string>
+    <string name="dtc_group03_text">Problems detected on Ignition control system or cylinder misfire occurred.</string>
+    <string name="dtc_group04_text">Problems detected on the engine idle control or the vehicle speed control system such as cruise control system.</string>
+    <string name="dtc_group05_text">Problems detected on the communication between the computer modules controlling the engine, transmission, etc..</string>
+    <string name="dtc_group06_text">Problems detected on the drive control system controlling the transmission and clutches.</string>
+    <string name="dtc_group07_text">Problems detected on some parts of the powertrain systems.</string>
+    <string name="dtc_group08_text">Problems detected on the body control system controlling vehicle doors, windows, sheets, wipers, and various lamps / buttons.</string>
+    <string name="dtc_group09_text">Problems detected on the chassis control system controlling ABS, TCS, parking brake, power steering, etc.</string>
+    <string name="dtc_group10_text">Problems detected on the in-vehicle communications network for sending and receiving data.</string>
+    <string name="dtc_common_text">Please visit your nearest maintenance company or refer to the manufacturer\'s maintenance guide.</string>
+    <string name="dtc_emergency">Problem detected on car %s system, etc.\nStop driving ASAP and please visit your nearest maintenance company or contact your insurance company.</string>
+    <string name="dtc_none">No problems have found.</string>
+</resources>

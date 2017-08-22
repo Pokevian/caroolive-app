@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string-array name="menu_items">
+        <item>@string/navigation_drawer_menu_notice</item>
+        <item>@string/navigation_drawer_menu_event</item>
+        <item>@string/navigation_drawer_menu_blackbox</item>
+        <item>@string/navigation_drawer_menu_vehicle_setting</item>
+        <item>@string/navigation_drawer_menu_blackbox_setting</item>
+        <item>@string/navigation_drawer_menu_setting</item>
+        <item>@string/navigation_drawer_menu_stipulation</item>
+        <item>@string/navigation_drawer_menu_log</item>
+
+        <!--<item>@string/navigation_drawer_menu_version_info</item>-->
+        <!--<item>@string/navigation_drawer_menu_obd_contac</item>-->
+        <!--<item>@string/navigation_drawer_menu_mypoint</item>-->
+    </string-array>
+
+    <array name="menu_icons">
+        <item>@drawable/side_icon_notice</item>
+        <item>@drawable/side_icon_event</item>
+        <item>@drawable/side_icon_mov</item>
+        <item>@drawable/side_icon_car</item>
+        <item>@drawable/side_icon_camera</item>
+        <item>@drawable/side_icon_setting</item>
+        <item>@drawable/side_icon_write</item>
+        <item>@drawable/side_icon_send</item>
+
+        <!--<item>@drawable/side_icon_phone</item>-->
+        <!--<item>@drawable/side_icon_obd</item>-->
+        <!--<item>@drawable/side_icon_phone</item>-->
+    </array>
+
+    <string-array name="chart_items">
+        <item>@string/tripmon_chart_statistics</item>
+        <item>@string/tripmon_chart_ecopoint</item>
+        <item>@string/tripmon_chart_fueleconomy</item>
+        <item>@string/tripmon_chart_fuelcost</item>
+        <item>@string/tripmon_chart_drivingrate</item>
+    </string-array>
+
+    <array name="ani_scan">
+        <item>@drawable/ani_scan001</item>
+        <item>@drawable/ani_scan002</item>
+        <item>@drawable/ani_scan003</item>
+        <item>@drawable/ani_scan004</item>
+        <item>@drawable/ani_scan005</item>
+        <item>@drawable/ani_scan006</item>
+        <item>@drawable/ani_scan007</item>
+        <item>@drawable/ani_scan008</item>
+        <item>@drawable/ani_scan009</item>
+        <item>@drawable/ani_scan010</item>
+        <item>@drawable/ani_scan011</item>
+        <item>@drawable/ani_scan012</item>
+    </array>
+
+    <array name="circle_level">
+        <item>@drawable/levelgraph_0</item>
+        <item>@drawable/levelgraph_1</item>
+        <item>@drawable/levelgraph_2</item>
+        <item>@drawable/levelgraph_3</item>
+        <item>@drawable/levelgraph_4</item>
+        <item>@drawable/levelgraph_5</item>
+        <item>@drawable/levelgraph_6</item>
+        <item>@drawable/levelgraph_7</item>
+        <item>@drawable/levelgraph_8</item>
+        <item>@drawable/levelgraph_9</item>
+        <item>@drawable/levelgraph_10</item>
+    </array>
+
+    <array name="badge_white">
+        <item>@drawable/badge_w_a1</item>
+        <item>@drawable/badge_w_a2</item>
+        <item>@drawable/badge_w_a3</item>
+        <item>@drawable/badge_w_a4</item>
+        <item>@drawable/badge_w_a5</item>
+        <item>@drawable/badge_w_b1</item>
+        <item>@drawable/badge_w_b2</item>
+        <item>@drawable/badge_w_b3</item>
+        <item>@drawable/badge_w_b4</item>
+        <item>@drawable/badge_w_b5</item>
+        <item>@drawable/badge_w_c1</item>
+        <item>@drawable/badge_w_c2</item>
+        <item>@drawable/badge_w_c3</item>
+        <item>@drawable/badge_w_c4</item>
+        <item>@drawable/badge_w_c5</item>
+        <item>@drawable/badge_w_d1</item>
+        <item>@drawable/badge_w_d2</item>
+        <item>@drawable/badge_w_d3</item>
+        <item>@drawable/badge_w_d4</item>
+        <item>@drawable/badge_w_d5</item>
+        <item>@drawable/badge_w_e1</item>
+        <item>@drawable/badge_w_e2</item>
+        <item>@drawable/badge_w_e3</item>
+        <item>@drawable/badge_w_e4</item>
+        <item>@drawable/badge_w_e5</item>
+    </array>
+
+    <array name="badge_green">
+        <item>@drawable/badge_g_a1</item>
+        <item>@drawable/badge_g_a2</item>
+        <item>@drawable/badge_g_a3</item>
+        <item>@drawable/badge_g_a4</item>
+        <item>@drawable/badge_g_a5</item>
+        <item>@drawable/badge_g_b1</item>
+        <item>@drawable/badge_g_b2</item>
+        <item>@drawable/badge_g_b3</item>
+        <item>@drawable/badge_g_b4</item>
+        <item>@drawable/badge_g_b5</item>
+        <item>@drawable/badge_g_c1</item>
+        <item>@drawable/badge_g_c2</item>
+        <item>@drawable/badge_g_c3</item>
+        <item>@drawable/badge_g_c4</item>
+        <item>@drawable/badge_g_c5</item>
+        <item>@drawable/badge_g_d1</item>
+        <item>@drawable/badge_g_d2</item>
+        <item>@drawable/badge_g_d3</item>
+        <item>@drawable/badge_g_d4</item>
+        <item>@drawable/badge_g_d5</item>
+        <item>@drawable/badge_g_e1</item>
+        <item>@drawable/badge_g_e2</item>
+        <item>@drawable/badge_g_e3</item>
+        <item>@drawable/badge_g_e4</item>
+        <item>@drawable/badge_g_e5</item>
+    </array>
+
+</resources>

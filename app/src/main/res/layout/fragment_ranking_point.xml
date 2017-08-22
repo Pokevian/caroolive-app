@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rank_1st"
+        layout="@layout/item_ranking_point_1st"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1.4" />
+
+    <include
+        android:id="@+id/rank_2d"
+        layout="@layout/item_ranking_point_2nd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1.4" />
+
+    <include
+        android:id="@+id/rank_3rd"
+        layout="@layout/item_ranking_point_3rd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1.4" />
+
+    <include
+        android:id="@+id/rank_4"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_5"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_6"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_7"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_8"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_9"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/rank_10"
+        layout="@layout/item_ranking_point"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="44dp"
+        android:textColor="#686868"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="공회전자제" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="19dp"
+        android:background="#b9b9b9" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_weight="1"
+        android:background="#b9b9b9"
+        android:layout_marginLeft="18dp"
+        android:max="100"
+        android:minHeight="32dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/pb_pattern_index_green"
+        tools:progress="85"
+        />
+
+    <TextView
+        android:id="@+id/driving_score"
+        android:minWidth="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#686868"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="88" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="38dp"
+        android:text="@string/drv_point"
+        android:textColor="#565656"
+        android:textSize="12dp" />
+
+</LinearLayout>

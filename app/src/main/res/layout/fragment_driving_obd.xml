@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_obd_cluster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_left_cluster" />
+
+    <ImageView
+        android:id="@+id/iv_check_fuelcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bg_obd_cluster"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/check_fuelcut" />
+
+    <LinearLayout
+        android:id="@+id/item_rpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_check_fuelcut"
+        android:layout_alignRight="@id/bg_obd_cluster"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="bottom|right">
+
+        <TextView
+            android:id="@+id/tv_rpm"
+            style="@style/clusterMeterText"
+            android:text="@string/empty_int_value"
+            tools:text="9999" />
+
+        <TextView
+            style="@style/clusterMeterUnitText"
+            android:layout_marginLeft="5dp"
+            android:text="rpm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_instant_fuel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bg_obd_cluster"
+        android:layout_alignRight="@id/item_rpm"
+        android:layout_marginBottom="34dp"
+
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_instant_fuel"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/center_fuel_progressbar_height"
+            android:max="30"
+            android:progressDrawable="@drawable/pb_instant_fuel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#bcbcbc"
+                android:textSize="6dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:textColor="#bcbcbc"
+                android:textSize="6dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20"
+                android:textColor="#bcbcbc"
+                android:textSize="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="30"
+                android:textColor="#bcbcbc"
+                android:textSize="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_instant_fuel"
+        android:layout_marginLeft="34dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_fuel_economy"
+            style="@style/clusterValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:minWidth="38dp"
+            android:text="@string/empty_float_value"
+            tools:text="99.9" />
+
+        <TextView
+            style="@style/clusterUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/fuel_economy_unit_kpl" />
+    </LinearLayout>
+</RelativeLayout>

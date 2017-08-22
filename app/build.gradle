@@ -1,0 +1,93 @@
+/*
+ * Copyright (c) 2014. Pokevian Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.application'
+
+
+repositories {
+    mavenLocal()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.pokevian.optimus"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1060101
+        versionName "1.06.01"
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        buildConfigField "boolean", "INCLUDE_BLACKBOX", "true"
+        buildConfigField "boolean", "INCLUDE_USER_CHANNEL", "true"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('keystore/debug.jks')
+        }
+        release {
+            storeFile file('keystore/release.jks')
+            keyAlias 'caroo'
+            keyPassword 'vhzl0815'
+            storePassword 'vhzl0815'
+        }
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix '-SNAPSHOT'
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules-debug.pro', 'proguard-google-api-client.pro', 'proguard-facebook-sdk.pro'
+            zipAlignEnabled true;
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.google.android.gms:play-services:6.1.71'
+    compile 'com.google.http-client:google-http-client-android:1.19.0'
+    compile 'com.google.http-client:google-http-client-gson:1.19.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.api-client:google-api-client-android:1.19.0'
+    compile 'com.google.apis:google-api-services-youtube:v3-rev124-1.19.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'log4j:log4j:1.2.17'
+    compile project(':android-support-v4-preferencefragment')
+    compile project(':caldroid')
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Base screen size -->
+    <dimen name="base_port_width">360dp</dimen>
+    <dimen name="base_port_height">615dp</dimen>
+    <dimen name="base_land_width">640dp</dimen>
+    <!-- <dimen name="base_land_height">360dp</dimen> -->
+    <dimen name="base_land_width_with_soft">600dp</dimen>
+    <dimen name="base_land_height">335dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="button_bar_height">48dp</dimen>
+
+    <dimen name="video_thumnail_width">80dp</dimen>
+    <dimen name="video_thumnail_height">60dp</dimen>
+
+    <!-- Drving Activity -->
+    <dimen name="cluster_width">234dp</dimen>
+    <dimen name="cluster_height">232dp</dimen>
+    <dimen name="cluster_margin_bottom">68dp</dimen>
+    <dimen name="cluster_margin_left_right">6dp</dimen>
+    <dimen name="center_width">110dp</dimen>
+    <dimen name="center_height">214dp</dimen>
+    <dimen name="center_margin_bottom">72dp</dimen>
+    <dimen name="detail_info_width">538dp</dimen>
+    <dimen name="detail_info_height">182dp</dimen>
+    <dimen name="detail_info_margin_bottom">68dp</dimen>
+    <dimen name="bottom_margin_bottom">2dp</dimen>
+
+    <!-- Drivng Detailed Info -->
+    <dimen name="detail_value_view_height">44dp</dimen>
+    <dimen name="detail_icon_view_height">65dp</dimen>
+    <dimen name="detail_view_margin">5dp</dimen>
+
+    <!-- Driving Center Fragment -->
+    <dimen name="center_connect_padding_left_right">16dp</dimen>
+    <dimen name="center_fule_margin_top">6dp</dimen>
+    <dimen name="center_fuel_padding_bottom">8dp</dimen>
+    <dimen name="center_fuel_padding_left_right">11dp</dimen>
+    <dimen name="center_fuel_progressbar_height">10dp</dimen>
+    <dimen name="center_trip_margin_top">6dp</dimen>
+    <dimen name="center_trip_padding_bottom">3dp</dimen>
+    <dimen name="center_trip_padding_left_right">11dp</dimen>
+    <dimen name="center_unit_margin_left">4dp</dimen>
+
+    <!-- Driving Left Fragment -->
+    <dimen name="left_fuelcut_margin_top">34dp</dimen>
+    <dimen name="left_fuelcut_margin_left">48dp</dimen>
+    <dimen name="left_rpm_meter_padding_right">33dp</dimen>
+    <dimen name="left_rpm_unit_margin_right">38dp</dimen>
+    <dimen name="left_lamp_margin_bottom">40dp</dimen>
+    <dimen name="left_battery_margin_left">25dp</dimen>
+    <dimen name="left_battery_margin_right">15dp</dimen>
+
+    <!-- Driving Right Fragment -->
+    <dimen name="right_overspeed_margin_top">34dp</dimen>
+    <dimen name="right_overspeed_margin_left">41dp</dimen>
+    <dimen name="right_speed_meter_padding_right">49dp</dimen>
+    <dimen name="right_speed_unit_margin_right">54dp</dimen>
+    <dimen name="right_lamp_margin_bottom">40dp</dimen>
+    <dimen name="right_brake_margin_left">20dp</dimen>
+    <dimen name="right_brake_margin_right">20dp</dimen>
+
+    <!-- Driving Bottom Fragment -->
+    <dimen name="bottom_luncher_margin_bottom">2dp</dimen>
+    <dimen name="bottom_luncher_margin_left_right">12dp</dimen>
+    <dimen name="bottom_button_margine_bottom">2dp</dimen>
+    <dimen name="bottom_button_margine_left_right">160dp</dimen>
+    <dimen name="bottom_detail_info_margine_bottom">4dp</dimen>
+
+    <!--  blackbox preview  -->
+    <dimen name="preview_luncher_margine_left_right">200dp</dimen>
+    <dimen name="main_menu_height">57dp</dimen>
+
+    <dimen name="main_record_circle_value">30dp</dimen>
+    <dimen name="main_record_circle_unit">15dp</dimen>
+    <dimen name="main_record_title">10dp</dimen>
+    <dimen name="main_record_value">20dp</dimen>
+    <dimen name="main_record_unit">10dp</dimen>
+
+    <dimen name="record_value_margin_top">4dp</dimen>
+
+    <dimen name="cluster_meter_text">60dp</dimen>
+    <dimen name="cluster_mater_unit_text">18dp</dimen>
+    <dimen name="cluster_value_text">20dp</dimen>
+    <dimen name="cluster_unit_text">12dp</dimen>
+
+    <!-- Floating head -->
+    <dimen name="floating_head_width">152dp</dimen>
+    <dimen name="floating_head_height">91dp</dimen>
+    <dimen name="floating_head_hide_horizontal_offset">20dp</dimen>
+    <dimen name="floating_head_hide_top_offset">30dp</dimen>
+    <dimen name="floating_head_hide_bottom_offset">10dp</dimen>
+
+</resources>

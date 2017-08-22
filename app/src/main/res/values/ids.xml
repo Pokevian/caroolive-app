@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Request code for pending intent -->
+    <item type="id" name="req_wake_up_auto_connect_service"/>
+    <item type="id" name="req_wake_up_data_upload_service"/>
+    <item type="id" name="req_main_activity"/>
+    <item type="id" name="req_smartdriving_activity"/>
+    <item type="id" name="req_bring_to_front_receiver"/>
+    <item type="id" name="req_turn_off_bluetooth_receiver"/>
+    <item type="id" name="req_crash_report_activity"/>
+
+    <!-- Notification ID -->
+    <item type="id" name="noti_foreground"/>
+    <item type="id" name="noti_driving_start"/>
+
+    <!-- App widget host ID -->
+    <item type="id" name="appwidget_host_id" />
+
+</resources>

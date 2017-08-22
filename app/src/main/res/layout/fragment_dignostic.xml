@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:background="#ffffff">
+
+    <TextView
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_dtc_reset"
+        android:gravity="center"
+        android:text="@string/diagnostic_dtc_reset"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:visibility="invisible"
+        tools:visiblility="visible" />
+
+    <ImageView
+        android:id="@+id/layer_diagnostic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/layer_diagnostic" />
+
+    <ImageView
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/layer_diagnostic"
+        android:layout_alignTop="@id/layer_diagnostic"
+        android:layout_marginTop="-24dp"
+        android:src="@drawable/btn_refresh" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_reset"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                tools:background="#ffff00">
+
+                <TextView
+                    android:id="@+id/btn_dtc01"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc01"
+                    android:text="@string/dtc_group01_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc02"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc02"
+                    android:text="@string/dtc_group02_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc03"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc03"
+                    android:text="@string/dtc_group03_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc04"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc04"
+                    android:text="@string/dtc_group04_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc05"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc05"
+                    android:text="@string/dtc_group05_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_dtc06"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc06"
+                    android:text="@string/dtc_group06_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc07"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc07"
+                    android:text="@string/dtc_group07_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc08"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc08"
+                    android:text="@string/dtc_group08_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc09"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc09"
+                    android:text="@string/dtc_group09_title" />
+
+                <TextView
+                    android:id="@+id/btn_dtc10"
+                    style="@style/DiagnosticIconText"
+                    android:drawableTop="@drawable/btn_dtc10"
+                    android:text="@string/dtc_group10_title" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#2e2e2e"
+                android:gravity="center"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                tools:text="@string/diagnostic_message_warning" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

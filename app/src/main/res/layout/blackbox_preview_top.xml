@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#40000000"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+    
+    <Button
+        android:id="@+id/btn_car_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_car_monitor" />
+
+   <!-- <ImageButton
+        android:id="@+id/preview_quick_launch_navi_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_toLeftOf="@id/btn_car_monitor"
+        android:layout_marginRight="@dimen/preview_luncher_margine_left_right"
+        android:layout_centerVertical="true"
+        android:background="@drawable/quick_empty_onpreview" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal" >
+
+        <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_preview_distance" /> -->
+
+        <TextView
+            android:id="@+id/preview_driving_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:gravity="right"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_preview_distance"
+            android:drawablePadding="6dp"
+            tools:text="999"
+             />
+
+        <TextView
+            android:id="@+id/preview_driving_distance_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            tools:text="@string/distance_unit_km"/>
+    </LinearLayout>
+
+    <!--<ImageButton
+        android:id="@+id/preview_quick_launch_custom_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@id/btn_car_monitor"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/preview_luncher_margine_left_right"
+        android:background="@drawable/quick_empty_onpreview" />-->
+
+    <TextView 
+        android:id="@+id/preview_driving_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/ic_preview_time"
+        android:drawablePadding="6dp"
+         android:gravity="right|center_vertical"
+        android:minWidth="100dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+        android:textColor="#ffffff"
+        tools:text="99:99:99"
+        />
+    
+    <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@id/preview_quick_launch_custom_btn"
+        android:layout_marginRight="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_preview_time" />
+
+        <TextView
+            android:id="@+id/preview_driving_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="6dp"
+            android:minWidth="80dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout> -->
+
+    
+
+</RelativeLayout>

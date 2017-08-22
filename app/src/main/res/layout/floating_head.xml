@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<com.pokevian.app.smartfleet.service.floatinghead.FloatingHeadView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.pokevian.app.smartfleet.service.floatinghead.DrivingView
+        android:id="@+id/driving"
+        android:layout_width="@dimen/floating_head_width"
+        android:layout_height="@dimen/floating_head_height"
+        android:background="@drawable/bg_floating">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="8dp"
+            tools:background="#00ffff">
+
+            <ImageView
+                android:id="@+id/ft_fuel_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_floating_fuel" />
+
+            <TextView
+                android:id="@+id/ft_fuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="sans-serif"
+                android:gravity="right"
+                android:includeFontPadding="false"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:text="99.9" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="28dp">
+
+            <TextView
+                android:id="@+id/ft_rpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="92dp"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="false"
+                android:text="9999"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ft_vss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="23dp"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="false"
+                android:text="130"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <com.pokevian.app.smartfleet.widget.CheckableImageView
+                android:id="@+id/ft_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_floating_battery" />
+
+            <com.pokevian.app.smartfleet.widget.CheckableImageView
+                android:id="@+id/ft_coolant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_floating_coolant" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ft_obd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_floating_obd" />
+
+            <ImageView
+                android:id="@+id/ft_mil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_floating_mil" />
+        </LinearLayout>
+    </com.pokevian.app.smartfleet.service.floatinghead.DrivingView>
+
+</com.pokevian.app.smartfleet.service.floatinghead.FloatingHeadView>

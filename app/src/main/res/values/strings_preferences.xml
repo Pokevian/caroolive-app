@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Fuel Types -->
+    <string-array name="fuel_type_entries">
+        <item>@string/fuel_gasoline</item>
+        <item>@string/fuel_diesel</item>
+        <item>@string/fuel_lpg</item>
+    </string-array>
+    <string-array name="fuel_type_values">
+        <item>GASOLINE</item>
+        <item>DIESEL</item>
+        <item>LPG</item>
+    </string-array>
+    <string name="fuel_type_default">GASOLINE</string>
+
+    <!-- Engine Displacement -->
+    <string name="engine_displacement_default">1600</string>
+
+    <!-- Odometer -->
+    <string name="odometer_default">0</string>
+
+    <!-- Distance Unit -->
+    <string-array name="distance_unit_entries">
+        <item>@string/distance_unit_km</item>
+        <item>@string/distance_unit_mi</item>
+    </string-array>
+    <string-array name="distance_unit_values">
+        <item>KM</item>
+        <item>MI</item>
+    </string-array>
+    <string name="distance_unit_default">KM</string>
+
+    <!-- Speed Unit -->
+    <string-array name="speed_unit_entries">
+        <item>@string/speed_unit_kph</item>
+        <item>@string/speed_unit_mph</item>
+    </string-array>
+    <string-array name="speed_unit_values">
+        <item>KPH</item>
+        <item>MPH</item>
+    </string-array>
+    <string name="speed_unit_default">KPH</string>
+
+    <!-- Volume Unit -->
+    <string-array name="volume_unit_entries">
+        <item>@string/volume_unit_l</item>
+        <item>@string/volume_unit_gal_us</item>
+        <item>@string/volume_unit_gal_uk</item>
+    </string-array>
+    <string-array name="volume_unit_values">
+        <item>L</item>
+        <item>GAL_US</item>
+        <item>GAL_UK</item>
+    </string-array>
+    <string name="volume_unit_default">L</string>
+
+    <!-- Fuel Economy Unit -->
+    <string-array name="fuel_economy_unit_entries">
+        <item>@string/fuel_economy_unit_kpl</item>
+        <item>@string/fuel_economy_unit_lp100km</item>
+        <item>@string/fuel_economy_unit_mpg_us</item>
+        <item>@string/fuel_economy_unit_mpg_uk</item>
+    </string-array>
+    <string-array name="fuel_economy_unit_values">
+        <item>KPL</item>
+        <item>LP100KM</item>
+        <item>MPG_US</item>
+        <item>MPG_UK</item>
+    </string-array>
+    <string name="fuel_economy_unit_default">KPL</string>
+
+    <!-- Temperature Unit -->
+    <string-array name="temperature_unit_entries">
+        <item>@string/temperature_unit_c</item>
+        <item>@string/temperature_unit_f</item>
+    </string-array>
+    <string-array name="temperature_unit_values">
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+    <string name="temperature_unit_default">C</string>
+
+    <!-- Weight Unit -->
+    <string-array name="weight_unit_entries">
+        <item>@string/weight_unit_kg</item>
+        <item>@string/weight_unit_lb</item>
+    </string-array>
+    <string-array name="weight_unit_values">
+        <item>KG</item>
+        <item>LB</item>
+    </string-array>
+    <string name="weight_unit_default">KG</string>
+
+    <!-- Impact sensitivity -->
+    <string-array name="impact_sensitivity_entries">
+        <item>@string/impact_sensitivity_very_high</item>
+        <item>@string/impact_sensitivity_high</item>
+        <item>@string/impact_sensitivity_normal</item>
+        <item>@string/impact_sensitivity_low</item>
+        <item>@string/impact_sensitivity_very_low</item>
+        <item>@string/impact_sensitivity_off</item>
+    </string-array>
+    <string-array name="impact_sensitivity_values">
+        <item>VERY_HIGH</item>
+        <item>HIGH</item>
+        <item>NORMAL</item>
+        <item>LOW</item>
+        <item>VERY_LOW</item>
+        <item>OFF</item>
+    </string-array>
+    <string name="impact_sensitivity_default">NORMAL</string>
+
+    <!-- ERS enabled -->
+    <string name="ers_enabled_default">true</string>
+
+    <!-- Youtube privacy -->
+    <string-array name="youtube_privacy_entries">
+        <item>@string/youtube_privacy_public</item>
+        <item>@string/youtube_privacy_unlisted</item>
+        <item>@string/youtube_privacy_private</item>
+    </string-array>
+    <string-array name="youtube_privacy_values">
+        <item>PUBLIC</item>
+        <item>UNLISTED</item>
+        <item>PRIVATE</item>
+    </string-array>
+    <string name="youtube_privacy_default">UNLISTED</string>
+
+    <!-- ERS target -->
+    <string-array name="ers_target_entries">
+        <item>@string/ers_target_none</item>
+        <item>@string/ers_target_call</item>
+        <item>@string/ers_target_sms</item>
+        <item>@string/ers_target_youtube</item>
+    </string-array>
+    <string-array name="ers_target_values">
+        <item>NONE</item>
+        <item>CALL</item>
+        <item>SMS</item>
+        <item>YOUTUBE</item>
+    </string-array>
+    <string name="ers_target_default">NONE</string>
+
+    <!-- Blackbox enabled -->
+    <string name="blackbox_enabled">false</string>
+
+    <!-- Video resolution -->
+    <string-array name="video_resolution_entries">
+        <item>640X480</item>
+        <item>720X480</item>
+        <item>1280X720</item>
+    </string-array>
+    <string-array name="video_resolution_values">
+        <item>640;480;false</item>
+        <item>720;480;false</item>
+        <item>1280;720;false</item>
+    </string-array>
+    <string name="video_resolution_default">640;480;false</string>
+
+    <!-- Video quality -->
+    <string-array name="video_quality_entries">
+        <item>@string/video_quality_super_fine</item>
+        <item>@string/video_quality_fine</item>
+        <item>@string/video_quality_normal</item>
+    </string-array>
+    <string-array name="video_quality_values">
+        <item>SUPER_FINE</item>
+        <item>FINE</item>
+        <item>NORMAL</item>
+    </string-array>
+    <string name="video_quality_default">NORMAL</string>
+
+    <!-- Normal video duration -->
+    <string-array name="normal_video_duration_entries">
+        <item>@string/video_duration_1_mimute</item>
+        <item>@string/video_duration_3_mimutes</item>
+        <item>@string/video_duration_5_mimutes</item>
+        <item>@string/video_duration_10_mimutes</item>
+    </string-array>
+    <string-array name="normal_video_duration_values">
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+    </string-array>
+    <string name="normal_video_duration_default">180000</string>
+
+    <!-- Storage type -->
+    <string-array name="storage_type_entries">
+        <item>@string/storage_internal</item>
+        <item>@string/storage_external</item>
+    </string-array>
+    <string-array name="storage_type_values">
+        <item>INTERNAL</item>
+        <item>EXTERNAL</item>
+    </string-array>
+    <string name="storage_type_default">INTERNAL</string>
+
+    <!-- Max storage size -->
+    <string-array name="max_storage_size_entries">
+        <item>@string/max_storage_size_full</item>
+    </string-array>
+    <string-array name="max_storage_type_values">
+        <item>1099511627776</item>
+        <!-- 1 TB -->
+    </string-array>
+    <string name="max_storage_size_default">1099511627776</string>
+
+    <string-array name="blackbox_type_entries">
+        <item>@string/blackbox_mr</item>
+        <item>@string/blackbox_mc</item>
+    </string-array>
+    <string-array name="blackbox_type_values">
+        <item>MEDIA_RECORDER</item>
+        <item>MEDIA_CODEC</item>
+    </string-array>
+
+    <string-array name="auto_start_mode_marshmallow_entries">
+        <item>@string/auto_start_mode_high</item>
+        <item>@string/auto_start_mode_normal</item>
+        <item>@string/auto_start_mode_low</item>
+        <item>@string/auto_start_mode_off</item>
+    </string-array>
+    <string-array name="auto_start_mode_marshmallow_values">
+        <item>HIGH</item>
+        <item>NORMAL</item>
+        <item>LOW</item>
+        <item>OFF</item>
+    </string-array>
+    <string name="auto_start_mode_marshmallow_default">HIGH</string>
+
+    <string-array name="auto_start_mode_normal_entries">
+        <item>@string/auto_start_mode_normal</item>
+        <item>@string/auto_start_mode_low</item>
+        <item>@string/auto_start_mode_off</item>
+    </string-array>
+    <string-array name="auto_start_mode_normal_values">
+        <item>NORMAL</item>
+        <item>LOW</item>
+        <item>OFF</item>
+    </string-array>
+    <string name="auto_start_mode_normal_default">NORMAL</string>
+
+</resources>

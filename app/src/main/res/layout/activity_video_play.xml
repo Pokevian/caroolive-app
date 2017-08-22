@@ -1,0 +1,98 @@
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <fragment
+        class="com.pokevian.app.smartfleet.ui.video.PlayerInfoFragment"
+        android:id="@+id/info_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <fragment
+        class="com.pokevian.app.smartfleet.ui.video.PlayerVideoFragment"
+        android:id="@+id/video_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <fragment
+        class="com.pokevian.app.smartfleet.ui.video.PlayerMapFragment"
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:enabled="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/metadata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_fragment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/speed"
+            style="@style/speedText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/speed_unit"
+            style="@style/speedUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/controller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/video_controller"
+        />
+
+    <TextView
+        android:id="@+id/timedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/controller"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1.2"
+        android:shadowDy="1.2"
+        android:shadowRadius="1.2"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

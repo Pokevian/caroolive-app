@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="147dp"
+    android:layout_height="147dp"
+    android:background="@drawable/user_graph_80">
+
+    <TextView
+        android:id="@+id/weekly_ranking"
+        style="@style/mainWeeklyRankingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_int_value"
+        tools:text="39321111111111"
+        tools:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/circle_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/weekly_ranking"
+        android:layout_marginBottom="-6dp"
+        android:src="@drawable/badge_w_a1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weekly_ranking"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_rank_position"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        tools:textColor="#000000" />
+</RelativeLayout>
+

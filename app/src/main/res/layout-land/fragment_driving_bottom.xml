@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/detail_info_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_detail_info"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:checked="false" />
+
+    <ImageView
+        android:id="@+id/iv_btn_ers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/bottom_button_margine_left_right"
+        android:layout_toLeftOf="@id/detail_info_btn"
+        android:src="@drawable/btn_ers" />
+
+    <ImageView
+        android:id="@+id/iv_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_button_margine_left_right"
+        android:layout_toRightOf="@id/detail_info_btn"
+        android:src="@drawable/btn_exit" />
+
+    <ImageView
+        android:id="@+id/btn_quick_launch_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/bottom_luncher_margin_left_right"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/detail_info_btn"
+        android:src="@drawable/btn_launcher_navi" />
+
+    <ImageButton
+        android:id="@+id/btn_diagnostic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_luncher_margin_left_right"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/detail_info_btn"
+        android:background="@drawable/btn_launcher_dtc" />
+
+</RelativeLayout>

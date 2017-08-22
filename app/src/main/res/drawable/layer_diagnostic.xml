@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/bg_dtc"/>
+    </item>
+    <item
+        android:id="@+id/item_chassis">
+        <bitmap android:src="@drawable/parts1_b"/>
+    </item>
+    <item
+        android:id="@+id/item_transmission">
+        <bitmap android:src="@drawable/parts2_b"/>
+    </item>
+    <item
+        android:id="@+id/item_electronic_circuit">
+        <bitmap android:src="@drawable/parts3_b"/>
+    </item>
+    <item
+        android:id="@+id/item_network">
+        <bitmap android:src="@drawable/parts4_b"/>
+    </item>
+    <item
+        android:id="@+id/item_engine">
+        <bitmap android:src="@drawable/parts5_b"/>
+    </item>
+    <item
+        android:id="@+id/item_exhaust">
+        <bitmap android:src="@drawable/parts6_b"/>
+    </item>
+    <item
+        android:id="@+id/item_electronic_device">
+        <bitmap android:src="@drawable/parts7_b"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/car_silhouette"/>
+    </item>
+</layer-list>

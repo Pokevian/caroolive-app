@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_bg_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/bg_main_portrate"
+            tools:background="#ffff00" />
+
+        <ImageView
+            android:id="@+id/iv_btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_preview"
+            tools:background="#ffff00" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_main_pattern"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:tileMode="repeat">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="338dp">
+
+            <fragment
+                android:id="@+id/detail_info_fragment"
+                android:name="com.pokevian.app.smartfleet.ui.driving.DrivingDetailInfoFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                tools:layout="@layout/fragment_driving_detail_info" />
+
+            <fragment
+                android:id="@+id/obd_fragment"
+                android:name="com.pokevian.app.smartfleet.ui.driving.ObdClusterFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                tools:layout="@layout/fragment_driving_obd" />
+
+            <fragment
+                android:id="@+id/trip_fragment"
+                android:name="com.pokevian.app.smartfleet.ui.driving.TripClusterFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                tools:layout="@layout/fragment_driving_trip" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/center_fragment"
+            android:name="com.pokevian.app.smartfleet.ui.driving.IndicatorFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_driving_indicator" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/bottom_fragment"
+            android:name="com.pokevian.app.smartfleet.ui.driving.BottomFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            tools:layout="@layout/fragment_driving_bottom" />
+    </LinearLayout>
+</LinearLayout>

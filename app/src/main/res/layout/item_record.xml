@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/record_title"
+        style="@style/mainRecordTitle"
+        android:drawableLeft="@drawable/ic_main_ranking"
+        android:paddingLeft="14dp"
+        android:text="@string/rank_total" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/record_value_margin_top"
+        tools:backgorund="#ffff00">
+
+        <TextView
+            android:id="@+id/record_value"
+            style="@style/mainRecordValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/empty_int_value"
+            tools:text="325" />
+
+        <TextView
+            android:id="@+id/record_unit"
+            style="@style/mainRecordUnit"
+            android:text="@string/main_rank_position" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/cluster_width"
+    android:layout_height="@dimen/cluster_height">
+
+    <ImageView
+        android:id="@+id/bg_trip_cluster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_right_cluster" />
+
+    <ImageView
+        android:id="@+id/cb_overspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_overspeed_margin_left"
+        android:layout_marginTop="@dimen/right_overspeed_margin_top"
+        android:src="@drawable/check_overspeed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_overspeed"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_vss"
+            style="@style/clusterMeterText"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="-12dp"
+            android:paddingRight="@dimen/right_speed_meter_padding_right"
+            android:text="@string/empty_int_value"
+            tools:text="999" />
+
+        <TextView
+            style="@style/clusterMeterUnitText"
+            android:layout_marginRight="@dimen/right_speed_unit_margin_right"
+            android:text="@string/speed_unit_kph"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bg_trip_cluster"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/center_trip_padding_bottom"
+        android:paddingLeft="34dp"
+        android:paddingRight="@dimen/right_speed_meter_padding_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cluster_distance" />
+
+            <TextView
+                android:id="@+id/run_distance"
+                style="@style/clusterValueText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/empty_float_value" />
+
+            <TextView
+                style="@style/clusterUnitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/center_unit_margin_left"
+                android:text="@string/distance_unit_km" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cluster_time" />
+
+            <TextView
+                android:id="@+id/run_time"
+                style="@style/clusterValueText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/empty_hmmss_value" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_right_cluster"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/right_lamp_margin_bottom"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/cb_harsh_accel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_harsh_accel" />
+
+        <ImageView
+            android:id="@+id/cb_harsh_brake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/right_brake_margin_left"
+            android:layout_marginRight="@dimen/right_brake_margin_right"
+            android:src="@drawable/check_harsh_brake" />
+
+        <ImageView
+            android:id="@+id/cb_idle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_idle" />
+    </LinearLayout>-->
+
+</RelativeLayout>

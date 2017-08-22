@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/video_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall">
+
+    <!-- check box -->
+    <CheckBox
+        android:id="@+id/video_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <!-- directory info panel -->
+    <RelativeLayout
+        android:id="@+id/video_dir_info_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/video_checkbox"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@id/video_checkbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/video_dir_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:drawableLeft="@drawable/ic_folder"
+            android:drawablePadding="4dp"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:gravity="left"
+            />
+    </RelativeLayout>
+
+    <!-- file info panel -->
+    <RelativeLayout
+        android:id="@+id/video_file_info_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/video_checkbox"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@id/video_checkbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <FrameLayout
+            android:id="@+id/video_thumbnail_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_video_frame">
+
+            <ImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="@dimen/video_thumnail_width"
+                android:layout_height="@dimen/video_thumnail_height"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="#80000000"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/video_thumbnail_panel"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/video_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:ellipsize="end"
+                android:gravity="left"
+                />
+
+            <TextView
+                android:id="@+id/video_file_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

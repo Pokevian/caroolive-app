@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">CaroO Live</string>
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--<string name="navigation_drawer_menu_main">Driving Style</string>-->
+    <!--<string name="navigation_drawer_menu_chart">Trip Stats</string>-->
+    <string name="navigation_drawer_menu_video">Video</string>
+    <string name="navigation_drawer_menu_notice">Notice</string>
+    <string name="navigation_drawer_menu_blackbox">Video Files</string>
+    <string name="navigation_drawer_menu_setting">General Settings</string>
+    <string name="navigation_drawer_menu_vehicle_setting">Car Settings</string>
+    <string name="navigation_drawer_menu_blackbox_setting">Dashcam Settings</string>
+    <string name="navigation_drawer_menu_stipulation">Terms of Service</string>
+    <string name="navigation_drawer_menu_version_info">Version Info.</string>
+    <string name="navigation_drawer_menu_user_info">User Info.</string>
+    <!--<string name="navigation_drawer_menu_logout">Log Out</string>-->
+    <string name="navigation_drawer_menu_channel_shotcut">User\nChannels</string>
+    <string name="navigation_drawer_menu_event">Useful Links</string>
+    <!--<string name="navigation_drawer_menu_obd_contac">OBD Purchase</string>-->
+    <!--<string name="navigation_drawer_menu_mypoint">My Point</string>-->
+    <string name="navigation_drawer_menu_log">Issue Report</string>
+    <!-- Actions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_log_report">Log Report</string>
+    <!--<string name="action_version_info">Version Info.</string>-->
+    <string name="action_discovery">Search</string>
+    <string name="action_unit_setting">Unit Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_driving_mode">Driving</string>
+    <string name="action_obd_reconnect">Connect OBD</string>
+    <string name="action_share">Share</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_withdrawal">Withdrawal</string>
+    <!-- Buttons -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_home">Home</string>
+    <string name="btn_previous">Prev.</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_ers_call">E-Call</string>
+    <string name="btn_ers_sms">E-SMS</string>
+    <string name="btn_ers_youtube">YouTube</string>
+    <string name="btn_preview_close">Close Preview</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_later">Later</string>
+    <string name="btn_register_vehicle">Register</string>
+    <string name="btn_google_auth">Google Authentication</string>
+    <string name="btn_google_sign_in">Google Login</string>
+    <string name="btn_facebook_auth">Facebook Authentication</string>
+    <string name="btn_facebook_sign_in">Facebook Login</string>
+    <string name="btn_join">Join</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_buy">Purchase</string>
+    <string name="btn_withdraw">Withdrawal</string>
+    <string name="btn_modify">Edit</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_add">Add</string>
+    <!--<string name="btn_detail_info">상세정보</string>-->
+    <!-- Notifications -->
+    <string name="noti_driving_content_title">@string/app_name</string>
+    <string name="noti_driving_content_on_driving">Driving Started</string>
+    <string name="noti_driving_content_off_driving">Paused</string>
+    <string name="noti_trip_report_driving_stopped">Driving Ended</string>
+    <string name="noti_trip_report_title">Trip Summary</string>
+    <string name="noti_trip_report_summary">New Trip for %1$s sec, %2$s %3$s Driven.</string>
+    <!-- Dialog -->
+    <string name="dialog_message_cannot_sign_in_google">Authentication Failed.\n\nRetry?</string>
+    <string name="dialog_message_cannot_sign_in_facebook">Authentication Failed.\n\nRetry?</string>
+    <string name="dialog_message_cannot_sign_in">Connection Failed.\n\nRetry?</string>
+    <string name="dialog_message_cannot_sign_in2">Login Failed.\n\nRetry in %d sec</string>
+    <string name="dialog_title_driving_on">Driving Mode Started</string>
+    <string name="dialog_message_driving_on">Ignition On Detected.\n\nMove to Driving Mode?\n\nWill move to Driving Mode in %d sec.</string>
+    <string name="dialog_title_driving_off">Driving Ended</string>
+    <string name="dialog_message_driving_off">Ignition Off Detected.\n\nWill be terminated in %d sec.</string>
+    <string name="dialog_title_driving_exit">Exit</string>
+    <string name="dialog_message_driving_exit">Will be terminated in %d sec.</string>
+    <string name="dialog_title_need_register_vehicle">Register Your Car</string>
+    <string name="dialog_message_need_register_vehicle">No Registered Cars\n\nRegister now?</string>
+    <string name="dialog_title_network_error">Network Error</string>
+    <string name="dialog_message_network_error">Failed to connect server.\n\nRetry?</string>
+    <string name="dialog_title_server_error">Operation Failed</string>
+    <string name="dialog_message_server_error">Server operation failed.\n\nRetry?</string>
+    <string name="dialog_title_edit_vehicle">Edit Car Info.</string>
+    <string name="dialog_message_edit_vehicle">Old car info. will be deleted and replaced with new Info.\n\nGo on?</string>
+    <string name="dialog_title_add_vehicle">Add New Cars</string>
+    <string name="dialog_message_add_vehicle">Do you want add a new car?</string>
+    <string name="dialog_title_confirm_vehicle_info">Check Car Info.</string>
+    <string name="dialog_message_discovering_obd_device">Searching OBD devices\u2026</string>
+    <string name="dialog_title_connect_obd_device">Connecting OBD</string>
+    <string name="dialog_message_connect_obd_device">%s: Try to connect the selected OBD?</string>
+    <string name="dialog_message_connecting_obd_device">Connecting OBD...\n\nWait for a while. \u2026</string>
+    <string name="dialog_message_cannot_connect_obd_device">Failed to connect OBD.\n\nRetry?</string>
+    <string name="dialog_message_not_supported_obd_protocol">Invalid protocol detected.</string>
+    <string name="dialog_message_insufficient_pid">Not enough OBD data supported.</string>
+    <string name="dialog_title_input_odometer">Odometer</string>
+    <string name="dialog_message_input_odometer">Type in odometer value of your car.</string>
+    <string name="dialog_message_updating_odometer">Updating odometer value...\u2026</string>
+    <string name="dialog_message_vehicle_setup_successfully">Car setting has beeng finished.</string>
+    <string name="dialog_title_enable_blackbox">Dashcam</string>
+    <string name="dialog_message_enable_blackbox">Do you use dashcam function?\n\nYou can do this later.</string>
+    <string name="dialog_message_wait_for">Wait for a while...\u2026</string>
+    <string name="dialog_title_blackbox_storage_warning">Error in Storage Setting</string>
+    <string name="dialog_message_blackbox_storage_warning">Not enough or no Storage for dashcam.\n\nPlease update settings.</string>
+    <string name="dialog_message_blackbox_init">Initializing dashcam...\n\nWait for a while.\u2026</string>
+    <string name="dialog_title_setup_finished">Settings Completed!</string>
+    <string name="dialog_message_setup_finished">Initial settings have been successfully finished. </string>
+    <string name="dialog_title_ers">Emergency</string>
+    <string name="dialog_mesage_ers">Closed automatically in %d sec.</string>
+    <string name="dialog_message_close_preview">Preview will be closed in %d sec.</string>
+    <string name="dialog_message_obd_recovery">No data from OBD device.\n\nTry to restart BT of your phone?</string>
+    <string name="dialog_message_quick_launch_navi">Navigation app will be started automatically in %d sec.</string>
+    <string name="dialog_message_logout">Sure to log out now?</string>
+    <string name="dialog_message_withdrawal">After withdrawn, all registered info and history will be deleted, and cannot be restored. \n\nSure to withdraw?</string>
+    <string name="dialog_title_buy">Purchase</string>
+    <string name="dialog_body_goods_name">Product:</string>
+    <string name="dialog_body_subtraction_point">Point Deducted:</string>
+    <string name="dialog_body_mandatory">Required Info:</string>
+    <string name="dialog_body_phone_number_hint">Mobile Phone No.</string>
+    <string name="dialog_body_mandatory_text">Phone number for receiving SMS.</string>
+    <string name="dialog_body_warning_1">* Notice: This coupon will be sent later.</string>
+    <string name="dialog_body_warning_2">Usually 2 or 3 days required for handling.</string>
+    <string name="dialog_title_buy_confirm">Purchase Confirmation</string>
+    <string name="dialog_body_warning_3">Refund for this purchase is not allowed.</string>
+    <string name="dialog_body_phone_number">Phone No.:</string>
+    <!-- Intro -->
+    <string name="intro_pokevian">© POKEVIAN</string>
+    <string name="intro_service_description">CaroO Live™ is \na simple connected car service using ELM327 compatible BT OBD and your phone. CaroO Live provides real-time monitoring and diagnostics of your car as weel as trip statistics and eco-driving guide.</string>
+    <string name="intro_blackbox_storage_error">No available storage for dashcam. \nDashcam cannot be started.</string>
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">Terms of Service</string>
+    <string name="disclaimer_personal">Privacy Policy</string>
+    <string name="disclaimer_service">Rights and Responsibilities</string>
+    <string name="disclaimer_location">Data Policy</string>
+    <string name="disclaimer_agree">I agree</string>
+    <string name="disclaimer_agree_all">Agree all the terms of service.</string>
+    <!-- Sign-up -->
+    <string name="sign_up_nick_name">Nickname</string>
+    <string name="sign_up_email">E-mail</string>
+    <string name="sign_up_birthday">Birth Date</string>
+    <string name="sign_up_country">Country</string>
+    <string name="sign_up_region">State</string>
+    <string name="sign_up_sex">Sex</string>
+    <string name="sign_up_please_input">Enter</string>
+    <string name="sign_up_please_select">Select</string>
+    <string name="sign_up_account_info">Account Info.</string>
+    <string name="sign_up_input_account_desc">Please enter the following info.</string>
+    <string name="sign_up_male">Male</string>
+    <string name="sign_up_female">Female</string>
+    <string name="sign_up_input_nick_name">Enter your nickname</string>
+    <string name="sign_up_pick_birthday">Enter your birth date (yyyy/mm/dd)</string>
+    <string name="sign_up_pick_country">Enter your country</string>
+    <string name="sign_up_pick_region">Enter your state</string>
+    <string name="sign_up_pick_sex">Enter your sex</string>
+    <string name="sign_up_pick_country_first">Please choose your country first.</string>
+    <string name="sign_up_register_account_desc">Welcome!\nRegister your car next.</string>
+    <string name="sign_up_google_auth">Google Authentication</string>
+    <string name="sign_up_cannot_connect_server">Unstable server connection.</string>
+    <!-- Welcome -->
+    <string name="welcome_sign_up_completed">Successfully Joined!</string>
+    <string name="welcome_message">Welcome!\nYou have joined successfully.\nPlease register your car next.</string>
+    <string name="welcome_vehicle_setting_guide_title">Car Registration Steps</string>
+    <string name="welcome_vehicle_setting_guide_1">Go to your car and Plug-in OBD device.</string>
+    <string name="welcome_vehicle_setting_guide_2">Turn ignition on.</string>
+    <string name="welcome_vehicle_setting_guide_3">Press \'Register\' button.</string>
+    <!-- Sign-in -->
+    <string name="sign_in_google_play_services_error">Google Play Service Failed.</string>
+    <string name="sign_in_failed">Log-in Failed.\nPlease try again later.</string>
+    <string name="sign_in_account_not_registered">Not joined yet.\nPlease join first. </string>
+    <string name="sign_in_sign_up">Join</string>
+    <!-- Main -->
+    <string name="main_press_back_more">Press \'Back\' button to quit CaroO Live.</string>
+    <string name="main_failed_to_sign_out">Log-out Failed.\nPlease try again later.</string>
+    <string name="main_trip_record">Trip List</string>
+    <string name="main_video_record">Video Files</string>
+    <string name="main_chart">Trip Stats</string>
+    <string name="main_settings">General Settings</string>
+    <string name="main_point">Driving Point</string>
+    <string name="main_status">Car Status</string>
+
+    <!-- Settings -->
+    <string name="settings_vehicle_setting">Car Settings</string>
+    <string name="settings_blackbox_setting">Dashcam Settings</string>
+    <string name="settings_general_setting">General Settings</string>
+
+    <!-- Vehicle setting -->
+    <string name="vehicle_setting_title">Car Settings</string>
+    <string name="vehicle_setting_vehicle_select">Please choose your car.</string>
+    <string name="vehicle_setting_vehicle_info">Car Info.</string>
+    <string name="vehicle_setting_vehicle_add">Add</string>
+    <string name="vehicle_setting_unit_setting">Units</string>
+    <string name="vehicle_setting_distance_unit">Distance</string>
+    <string name="vehicle_setting_volume_unit">Volume</string>
+    <string name="vehicle_setting_fuel_economy_unit">Fuel Eco.</string>
+    <string name="vehicle_setting_temperature_unit">Temp.</string>
+    <string name="vehicle_setting_weight_unit">Weight</string>
+    <string name="vehicle_setting_maker">Manufacturer</string>
+    <string name="vehicle_setting_pick_maker">Please choose a manufacture.</string>
+    <string name="vehicle_setting_pick_maker_first">Please choose a manufacture first.</string>
+    <string name="vehicle_setting_type">Type</string>
+    <string name="vehicle_setting_pick_type">Please choose a car type.</string>
+    <string name="vehicle_setting_pick_type_first">Please choose a car type first.</string>
+    <string name="vehicle_setting_model">Model</string>
+    <string name="vehicle_setting_pick_model">Please choose a model.</string>
+    <string name="vehicle_setting_pick_model_first">Please choose a model first.</string>
+    <string name="vehicle_setting_fuel">Fuel</string>
+    <string name="vehicle_setting_pick_fuel">Please choose a fuel type.</string>
+    <string name="vehicle_setting_pick_fuel_first">Please choose a fuel type first.</string>
+    <string name="vehicle_setting_displacement">Engine Disp.</string>
+    <string name="vehicle_setting_pick_displacement">Please choose an engine displacement.</string>
+    <string name="vehicle_setting_pick_displacement_first">Please choose an engine displacement first.</string>
+    <string name="vehicle_setting_years">Year</string>
+    <string name="vehicle_setting_pick_years">Please choose a manufactured year.</string>
+    <string name="vehicle_setting_pick_years_first">Please choose a manufactured year first.</string>
+    <string name="vehicle_setting_isg">ISG</string>
+    <string name="vehicle_setting_pick_isg">Intelligent Stop and Go Supported?</string>
+    <string name="vehicle_setting_isg_support">Yes</string>
+    <string name="vehicle_setting_isg_not_support">No</string>
+    <string name="vehicle_setting_plate_no">Plate No.</string>
+    <string name="vehicle_setting_input_plate_no">Please enter your car plate number.</string>
+    <string name="vehicle_setting_pick_obd_device">Please choose your active OBD device.</string>
+    <string name="vehicle_setting_empty_obd_device">No available OBD device.\n\nPlug-in OBD device first and press search button.</string>
+    <string name="vehicle_setting_please_select">Press and Choose</string>
+    <string name="vehicle_setting_please_input">Press and Enter</string>
+    <string name="vehicle_setting_obd_connection">Configuring OBD</string>
+    <string name="vehicle_setting_obd_step0">Searching OBD device.</string>
+    <string name="vehicle_setting_obd_step1">Ready to connect OBD.</string>
+    <string name="vehicle_setting_obd_step2">Initializing OBD.</string>
+    <string name="vehicle_setting_obd_step3">OBD initialization completed.</string>
+    <string name="vehicle_setting_obd_step4">Reading car OBD data.</string>
+    <string name="vehicle_setting_obd_step5">OBD configuration completed.</string>
+    <!-- Blackbox setting -->
+    <string name="blackbox_setting_enabled">Use Dashcam</string>
+    <string name="blackbox_setting_blackbox_type">Recording Type</string>
+    <string name="blackbox_setting_video_resolution">Video Resolution</string>
+    <string name="blackbox_setting_video_quality">Video Quality</string>
+    <string name="blackbox_setting_video_duration">Recording Time per File</string>
+    <string name="blackbox_setting_storage_type">File Storage</string>
+    <string name="blackbox_setting_max_storage_size">Max Storage Size</string>
+    <string name="blackbox_setting_audio_enabled">Voice Recording</string>
+    <string name="blackbox_setting_audio_enabled_summary">Activate voice recording for video</string>
+    <string name="blackbox_setting_not_recommanded">Not Recommended</string>
+    <string name="blackbox_setting_check_max_storage_size">Please check maximum storage size.</string>
+    <string name="blackbox_setting_media_mounted">External SD card available.\nPlease check the storage location and max size. </string>
+    <string name="blackbox_setting_media_unmounted">External SD card error. \nPlease check the storage location and max size.</string>
+    <!-- General setting -->
+    <string name="general_setting_impact_sensitivity">Collision Detection</string>
+    <string name="general_setting_ers">Emergency Contact</string>
+    <string name="general_setting_ers_enabled">Auto Emergency Contact</string>
+    <string name="general_setting_ers_enabled_summary">Emergency call or SMS automatically when collision detected</string>
+    <string name="general_setting_ers_call">E-call</string>
+    <string name="general_setting_ers_call_summary">Please enter emergency call number.</string>
+    <string name="general_setting_ers_sms">E-SMS</string>
+    <string name="general_setting_ers_sms_summary">Please enter phone number and message for emergency report.</string>
+    <string name="general_setting_ers_contact">Contact</string>
+    <string name="general_setting_ers_message">Message</string>
+    <string name="general_setting_ers_phone_number_hint">Enter phone number</string>
+    <string name="general_setting_ers_name_hint">Enter contact name</string>
+    <string name="general_setting_ers_message_hint">Enter emergency message </string>
+    <string name="general_setting_ers_youtube_privacy">YouTube Share</string>
+    <string name="general_setting_ers_target">Emergency Contact Type</string>
+    <string name="general_setting_quick_launch_navi">Navigation App</string>
+    <string name="general_setting_quick_launch_navi_summary">Please choose your favorite car navigation app.</string>
+    <string name="general_setting_auto_launch_navi_enabled">Auto-launch Navigation App</string>
+    <string name="general_setting_auto_launch_navi_enabled_summary">Launch car navigation app while driving mode is activated.</string>
+    <string name="general_setting_quick_launch_custom">Quick Launcher</string>
+    <string name="general_setting_quick_launch_custom_summary">Choose an app for quick launch. </string>
+    <string name="general_setting_quick_launch_none">None</string>
+    <string name="general_setting_overspeed_threshold">Overspeed Alarm</string>
+    <string name="general_setting_engine_off_detection_enabled">Ignition Off Detection</string>
+    <string name="general_setting_engine_off_detection_enabled_summary">Terminate automatically when ignition off is detected.</string>
+    <string name="general_setting_engine_off_detection_isg_enabled">Intelligent Stop and Go</string>
+    <string name="general_setting_engine_off_detection_isg_enabled_summary">Detect Intelligent Stop and Go.</string>
+    <string name="general_setting_engine_on_detection_enabled">Ignition On Detection</string>
+    <string name="general_setting_engine_on_detection_enabled_summary">Automatically launch when ignition on is detected.\nDashcam should be disabled.</string>
+    <string name="general_setting_engine_on_detection_enabled_warning">Dashcam should be disabled. </string>
+    <string name="general_setting_engine_on_detection_power_save">Battery Save Mode</string>
+    <string name="general_setting_engine_on_detection_power_save_summary">Enable battery save mode.</string>
+    <string name="general_setting_sound_effect_enabled">Sound Effect</string>
+    <string name="general_setting_sound_effect_enabled_on">Turn on sound effect.</string>
+    <string name="general_setting_sound_effect_enabled_off">Turn off sound effect.</string>\
+    <string name="general_setting_floating_enabled">Floating Display</string>
+    <string name="general_setting_floating_enabled_summary">Use floating display in background mode.</string>
+    <!-- Driving -->
+    <string name="driving_instance_fuel_economy">Inst. Fuel Eco</string>
+    <string name="driving_average_fuel_economy">Avg. Fuel Eco</string>
+    <string name="driving_fuel_consumption">Fuel Consum.</string>
+    <string name="driving_harsh_acceleration">Harsh Accel</string>
+    <string name="driving_harsh_deceleration">Harsh Brake</string>
+    <string name="driving_trip_distance">Distance</string>
+    <string name="driving_no_value_exp">---</string>
+    <string name="driving_no_speed_exp">---</string>
+    <string name="driving_no_fuel_economy_exp">--.-</string>
+    <string name="driving_no_fuel_consumption_exp">--.-</string>
+    <string name="driving_no_count_exp">--</string>
+    <string name="driving_no_distance_exp">--</string>
+    <string name="driving_no_time_exp">--:--</string>
+    <string name="driving_blackbox_error">Video recorder failure (error code:%d)</string>
+    <string name="driving_camera_error">Cannot use camera.\nPlease check whether other camera app is alive.</string>
+    <string name="driving_trip_this_trip">THIS TRIP</string>
+    <string name="driving_trip_a">TRIP-A</string>
+    <string name="driving_trip_b">TRIP-B</string>
+    <string name="driving_trip_rest_guide">Press for 3 sec to reset</string>
+    <string name="driving_clear_stored_dtc">Clear all stored DTC.</string>
+
+    <string name="driving_value_accel_position">Accel. Pos.</string>
+    <string name="driving_value_fuel_level">Fuel Level</string>
+    <string name="driving_value_barometer">Baro.</string>
+    <string name="driving_value_vehicle_speed">Speed</string>
+    <string name="driving_value_engine_rpm">RPM</string>
+    <string name="driving_value_engine_load">Eng. Load</string>
+    <string name="driving_value_aux_battery_level">Batt. Volt.</string>
+    <string name="driving_value_coolant_temperature">Coolant Temp.</string>
+    <string name="driving_value_mil">Malfunction (MIL)</string>
+
+    <string name="driving_value_short_term_fuel_trim">ST Fuel Trim</string>
+    <string name="driving_value_long_term_fuel_trim">LT Fuel Trim</string>
+    <string name="driving_value_fule_pressure">Fuel Pressure</string>
+    <string name="driving_value_intake_air_temperature">In. Air-Temp.</string>
+    <string name="driving_value_ambient_air_temperature">Amb. Air-Temp.</string>
+    <string name="driving_value_throttle_position">Throttle Pos.</string>
+    <string name="driving_value_distance_mil">Distance w. MIL</string>
+    <string name="driving_value_engine_oil_temperature">Eng. Oil Temp.</string>
+    <string name="driving_value_oxygen_sensor_voltage">O2 Sensor Volt.</string>
+
+    <string name="driving_value_fuel_economy">Avg. Fuel Eco.</string>
+    <string name="driving_value_fuel_consumption">Fuel Consump.</string>
+    <string name="driving_value_co2_emission">CO2 Emission</string>
+    <string name="driving_value_fuel_cut_time">Fuelcut Time</string>
+    <string name="driving_value_harsh_accel_count">Harsh Accel. Count</string>
+    <string name="driving_value_harsh_decel_count">Harsh Brake Count</string>
+    <string name="driving_value_eco_speed_time">Eco-speed Time</string>
+    <string name="driving_value_overspeed_time">Overspeed Time</string>
+    <string name="driving_value_idling_time">Idle Time</string>
+
+    <!-- Preferences -->
+    <string name="fuel_gasoline">Gasoline</string>
+    <string name="fuel_diesel">Diesel</string>
+    <string name="fuel_lpg">LPG</string>
+    <string name="distance_unit_km">km</string>
+    <string name="distance_unit_mi">mi</string>
+    <string name="speed_unit_kph">km/h</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="volume_unit_l">L</string>
+    <string name="volume_unit_gal_us">gal(US)</string>
+    <string name="volume_unit_gal_uk">gal(UK)</string>
+    <string name="fuel_economy_unit_kpl">km/L</string>
+    <string name="fuel_economy_unit_lp100km">L/100km</string>
+    <string name="fuel_economy_unit_mpg_us">mpg(US)</string>
+    <string name="fuel_economy_unit_mpg_uk">mpg(UK)</string>
+    <string name="temperature_unit_c">°C</string>
+    <string name="temperature_unit_f">°F</string>
+    <string name="weight_unit_kg">kg</string>
+    <string name="weight_unit_lb">lb</string>
+    <string name="impact_sensitivity_very_high">Very Sensitive</string>
+    <string name="impact_sensitivity_very_low">Very Insensitive</string>
+    <string name="impact_sensitivity_high">Sensitive</string>
+    <string name="impact_sensitivity_normal">Normal</string>
+    <string name="impact_sensitivity_low">Insensitive</string>
+    <string name="impact_sensitivity_off">Not Use</string>
+    <string name="youtube_privacy_public">Public\n(Anyone can search for and view)</string>
+    <string name="youtube_privacy_unlisted">Unlisted\n(Anyone with the link can view)</string>
+    <string name="youtube_privacy_private">Private\n(Only you can view)</string>
+    <string name="ers_target_none">None</string>
+    <string name="ers_target_call">Call</string>
+    <string name="ers_target_sms">SMS</string>
+    <string name="ers_target_youtube">YouTube</string>
+    <string name="ers_sms_message_default">Emergency situation occurred while driving. </string>
+    <string name="video_resolution">Resolution</string>
+    <string name="video_quality_normal">Normal</string>
+    <string name="video_quality_fine">Fine</string>
+    <string name="video_quality_super_fine">Super-fine</string>
+    <string name="video_duration_1_mimute">1 Min.</string>
+    <string name="video_duration_3_mimutes">3 Min.</string>
+    <string name="video_duration_5_mimutes">5 Min.</string>
+    <string name="video_duration_10_mimutes">10 Min.</string>
+    <string name="storage_internal">Internal Storage</string>
+    <string name="storage_external">External SD</string>
+    <string name="max_storage_size_full">Full</string>
+    <string name="blackbox_mc">Cont. Mode</string>
+    <string name="blackbox_mr">File Mode</string>
+    <!-- Youtube upload service -->
+    <string name="youtube_ticker_initiation_started">Sharing video to YouTube</string>
+    <string name="youtube_title_upload">Upload Video to YouTube</string>
+    <string name="youtube_content_initiation_started">Preparing video...\u2026</string>
+    <string name="youtube_content_media_process">Uploading video...\u2026</string>
+    <string name="youtube_content_media_complete">Video upload completed.</string>
+    <!--Video Play-->
+    <string name="video_play_msg_google_play_service_update">For proper operation, Goole Play Service should be installed or updated first.</string>
+    <string name="video_play_title_notice">Notice</string>
+    <string name="video_play_msg_loading">Loading files...\u2026 Please wait for a while.</string>
+    <string name="video_play_title_archive_video_list">Video Archive</string>
+    <string name="video_play_title_event_video_list">Emergency Video</string>
+    <string name="video_play_title_normal_video_list">Normal Video</string>
+    <string name="video_play_title_video_list">Video List</string>
+    <string name="video_play_title_video_play">Play Video</string>
+    <string name="video_play_msg_selected">%d files selected.</string>
+    <string name="video_play_menu_unselect_all">Unselect All</string>
+    <string name="video_play_menu_select_all">Select All</string>
+    <string name="video_play_menu_delete">Delete</string>
+    <string name="video_play_menu_select_option">Option</string>
+    <string name="video_play_option_delete_video">Delete video files.</string>
+    <string name="video_play_msg_empty_trip">No trip records</string>
+    <string name="video_play_msg_empty_video">No video files</string>
+    <string name="video_play_menu_archive">Archive</string>
+    <string name="video_play_title_delete_video">Delete Video</string>
+    <string name="video_play_title_delete_trip">Delete Trip</string>
+    <string name="video_play_msg_delete_video">Sure to delete files?</string>
+    <string name="video_play_menu_share">Share</string>
+    <string name="video_play_msg_cannot_share_folder">Sharing a folder is not supported. </string>
+    <string name="video_play_msg_cannot_open_camera">Cannot use camera.\nPlease check whether other camera app is alive.</string>
+    <string name="video_play_file_size">File Size</string>
+    <string name="video_play_video_play_video_resolution">Video Resolution</string>
+    <string name="video_play_title_share_video">Share</string>
+    <string name="video_play_title_copy_video_to_archive">Copy to Video Archive</string>
+    <string name="video_play_msg_copy_video_to_archive">Copy files to video archive?</string>
+    <string name="video_play_player_lamp_ecodriving">Eco-speed</string>
+    <string name="video_play_player_lamp_overspeed">Overspeed</string>
+    <string name="video_play_player_lamp_idling">Idling</string>
+    <string name="video_play_player_lamp_accdec">Harsh Acc/Brake</string>
+    <string name="video_play_player_lamp_trouble">Malfunction</string>
+    <!-- Trip monitor -->
+    <string name="tripmon_chart_period_day">Daily</string>
+    <string name="tripmon_chart_period_week">Weekly</string>
+    <string name="tripmon_chart_period_month">Monthly</string>
+    <string name="tripmon_chart_statistics">Stats</string>
+    <string name="tripmon_chart_ecopoint">Driving Score</string>
+    <string name="tripmon_chart_fueleconomy">Fuel Eco</string>
+    <string name="tripmon_chart_fuelcost">Fuel Cost</string>
+    <string name="tripmon_chart_drivingrate">Driving </string>
+    <string name="tripmon_video_period_day">Day</string>
+    <string name="tripmon_video_period_week">Week</string>
+    <string name="tripmon_video_period_month">Month</string>
+    <string name="tripmon_video_period_all">Total</string>
+    <string name="tripmon_popup_route_detail">Route</string>
+    <string name="tripmon_popup_route_video">Video</string>
+    <string name="popup_chart">Trip Stats</string>
+    <string name="popup_title_calendar">Select Date</string>
+    <string name="popup_title_chart_type">Chart Type</string>
+    <string name="notice_category_all">All</string>
+    <string name="web_loading_error">Loading Failure</string>
+    <!-- Log report -->
+    <string name="log_report">%s Log</string>
+    <!-- Crash report -->
+    <string name="crash_report">%s Abnormal Termination</string>
+    <string name="crash_message">Operation failure and abnormal termination.\nPlease send log report for bug patch.</string>
+
+    <string name="empty_string_value">--</string>
+    <string name="empty_int_value">---</string>
+    <string name="empty_float_value">--.-</string>
+    <string name="empty_hmmss_value">-:--:--</string>
+    <string name="empty_mmss_value">--:--</string>
+    <string name="empty_trip_info">( --.- km | --:--)</string>
+    <string name="empty_score_info">( --.- km | -- Times)</string>
+
+    <string name="notice">Notice</string>
+    <string name="network_disconnect">Network Connection Failure.</string>
+
+    <!-- main -->
+    <!--<string name="main_rank_level">LEVEL</string>-->
+    <!--<string name="main_rank_driver">운전자 랭킹</string>-->
+    <string name="main_score">Score</string>
+    <string name="main_rank_point">Point</string>
+    <string name="main_rank_position">Rank</string>
+    <string name="main_rank_economy_speed">Eco-speed</string>
+    <string name="fuel_cut">Fuelcut</string>
+    <string name="harsh_speed">Harsh Drv.</string>
+    <string name="rank_level">LV</string>
+    <string name="rank_parenthesis_left">(</string>
+    <string name="rank_parenthesis_right">)</string>
+    <string name="drv_point">pt</string>
+    <string name="drv_count">Trip Count</string>
+    <string name="rank_drv_times">times</string>
+    <string name="drv_distance">Drv. Distance</string>
+    <string name="weekly_ranking">Driver Ranking</string>
+    <!--<string name="last_week_sign">\u003c 지난주</string>-->
+    <string name="this_week_sign">This Week \u003e</string>
+    <string name="last_week">Last Week</string>
+    <string name="this_week">This Week</string>
+    <string name="rank_echo_drv">Avg. Score</string>
+    <string name="drv_pattern">Driving Pattern</string>
+    <string name="pattern_drv_time">Driving Time</string>
+    <string name="pattern_top_speed">Max Speed</string>
+    <string name="pattern_avg_speed">Avg. Speed</string>
+    <string name="pattern_danger">Harsh Driving</string>
+    <string name="pattern_eco">Eco Speed</string>
+    <string name="pattern_overspeed">Speeding</string>
+    <string name="engine_load">Overload</string>
+    <string name="pattern_idling">Non-Idling</string>
+    <string name="eco_speed">Eco-speed</string>
+    <string name="rank_trip">Trip Score</string>
+    <string name="rank_weekly">Avg. Score</string>
+    <string name="rank_fuel_saved">Fuel Saving</string>
+    <string name="drv_day_time">Driving Date</string>
+    <string name="drv_run_time">Driving Time</string>
+    <string name="dialog_diagnostic">Diagnotics</string>
+    <string name="dialog_diagnostic_msg">Car Diagnosing...\u2026</string>
+    <string name="dialog_diagnostic_warning_text">Press car image for checking more details. </string>
+    <string name="dialog_diagnostic_title_ok">No Troubles</string>
+    <string name="dialog_diagnostic_title_warning">DTC Warning</string>
+
+    <string name="diagnostic_dtc_reset">Clear stored DTC</string>
+    <string name="diagnostic_detail_text">Car maintenance and inspection recommended.</string>
+    <string name="dialog_message">Automatically closed after a while.</string>
+    <string name="diagnostic_message_warning">Press any red-colored lamp if want to check DTC details.</string>
+    <string name="diagnostic_message_good">Car status is good.</string>
+    <string name="dialog_diagnostic_dte_reset_message">Manual DTC clearance is not recommended.\n\nSure to continue?</string>
+    <string name="dialog_diagnostic_driving_warning">Clearing DTC while driving is not supported.\n\nPlease stop your car and retry.</string>
+
+    <string name="event_noti_title">Add New Event</string>
+    <string name="evnet_noti_message">Press for checking new events.</string>
+
+    <string name="ssl_error_title">Security Warning</string>
+    <string name="ssl_error_message">A problem with this security certificate of this site</string>
+    <string name="ssl_error_continue">Continue</string>
+
+    <string name="notify_event">Please check a new event.</string>
+    <string name="notify_notification">Please check a new notice.</string>
+
+    <string name="hof">HOF</string>
+    <string name="hof_level">Level</string>
+    <string name="hof_point">Point Accum.</string>
+    <string name="point">Point</string>
+    <string name="residue">Remain</string>
+    <string name="point_residue">Point Remain.</string>
+    <string name="point_accumulation">Point Accum.</string>
+    <string name="point_used">Point Used</string>
+    <string name="point_extinction">Point Expiring</string>
+
+    <string name="diag">Diagnostics</string>
+
+    <string name="rank_eco_speed">Eco-speed</string>
+    <string name="rank_fuelcut">Fuelcut</string>
+    <string name="rank_harsh">Harsh Drv.</string>
+    <string name="rank_overspeed">Overspeed</string>
+    <string name="rank_total">Avg. Score</string>
+
+    <string name="record_fuel_cost">Fuel Cost Accum.</string>
+    <string name="record_fuel_cost_saved">Fuel Cost Saving</string>
+    <string name="record_fuel_cost_saved_tk">Saving/10000km</string>
+
+    <string name="unit_point">P</string>
+    <string name="unit_won">Won</string>
+    <string name="round_bracket">(%s)</string>
+    <string name="fuel_save_won">%s Won</string>
+    <string name="fuel_save_10t_won">%s 10k\</string>
+
+    <string name="account_region_seoul">Seoul</string>
+    <string name="account_region_daejeon">Daejeon</string>
+    <string name="account_region_gwangju">Gwangju</string>
+    <string name="account_region_busan">Busan</string>
+    <string name="account_region_ulsan">Ulsan</string>
+    <string name="account_region_daegu">Daegu</string>
+    <string name="account_region_incheon">Incheon</string>
+    <string name="account_region_gyeonggi">Gyeonggi</string>
+    <string name="account_region_chungnam">Chungnam</string>
+    <string name="account_region_chungbuk">Chungbuk</string>
+    <string name="account_region_jeonnam">Jeonnam</string>
+    <string name="account_region_jeonbuk">Jeonbuk</string>
+    <string name="account_region_gyeongnam">Gyeongnam</string>
+    <string name="account_region_gyeongbuk">Gyeongbuk</string>
+    <string name="account_region_gangwon">Gangwon</string>
+    <string name="account_region_jeju">Jeju</string>
+
+    <string name="message_withdrawal_fail">Withdrawal Failed.\nPlease retry later.</string>
+    <string name="message_withdrawal_success">Withdrawal Completed.</string>
+    <string name="message_update_success">Account info. Modified.</string>
+
+    <string name="message_try_after">Auto-retry in % sec.</string>
+    <string name="auto_start_mode_off">Disable</string>
+    <string name="auto_start_mode_low">Screen On</string>
+    <string name="auto_start_mode_normal">Normal\n(Only if non-sleep mode)</string>
+    <string name="auto_start_mode_high">Full-time\n(Full-time with Notification)</string>
+
+    <string name="summary_enabled">Enable</string>
+    <string name="summary_disabled">Disable</string>
+
+</resources>

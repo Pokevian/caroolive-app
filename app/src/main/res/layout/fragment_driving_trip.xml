@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_trip_cluster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_right_cluster" />
+
+    <ImageView
+        android:id="@+id/cb_overspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bg_trip_cluster"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/check_overspeed" />
+
+    <LinearLayout
+        android:id="@+id/item_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cb_overspeed"
+        android:layout_alignRight="@id/bg_trip_cluster"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="bottom|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_vss"
+            style="@style/clusterMeterText"
+            android:text="@string/empty_int_value"
+            tools:text="999" />
+
+        <TextView
+            android:id="@+id/tv_vss_unit"
+            style="@style/clusterMeterUnitText"
+            android:layout_marginLeft="5dp"
+            android:text="@string/speed_unit_kph" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bg_trip_cluster"
+        android:layout_alignRight="@id/item_speed"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="34dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cluster_distance" />
+
+            <TextView
+                android:id="@+id/run_distance"
+                style="@style/clusterValueText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/empty_float_value" />
+
+            <TextView
+                style="@style/clusterUnitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/center_unit_margin_left"
+                android:text="@string/distance_unit_km" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cluster_time" />
+
+            <TextView
+                android:id="@+id/run_time"
+                style="@style/clusterValueText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/empty_hmmss_value" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

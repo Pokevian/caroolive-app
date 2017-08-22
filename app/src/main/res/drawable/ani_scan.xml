@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+    android:id="@+id/ani_scan">
+    <item android:drawable="@drawable/ani_scan001" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan002" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan003" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan004" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan005" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan006" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan007" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan008" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan009" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan010" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan011" android:duration="@integer/diagnostic_duration" />
+    <item android:drawable="@drawable/ani_scan012" android:duration="@integer/diagnostic_duration" />
+</animation-list>

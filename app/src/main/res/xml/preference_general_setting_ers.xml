@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="ers_enabled"
+        android:defaultValue="@string/ers_enabled_default"
+        android:title="@string/general_setting_ers_enabled"
+        android:summary="@string/general_setting_ers_enabled_summary"/>
+
+    <Preference
+        android:key="ers_call"
+        android:persistent="false"
+        android:dependency="ers_enabled"
+        android:title="@string/general_setting_ers_call"
+        android:summary="@string/general_setting_ers_call_summary"/>
+
+    <Preference
+        android:key="ers_sms"
+        android:persistent="false"
+        android:dependency="ers_enabled"
+        android:title="@string/general_setting_ers_sms"
+        android:summary="@string/general_setting_ers_sms_summary"/>
+
+    <ListPreference
+        android:key="ers_youtube_privacy"
+        android:dependency="ers_enabled"
+        android:entries="@array/youtube_privacy_entries"
+        android:entryValues="@array/youtube_privacy_values"
+        android:defaultValue="@string/youtube_privacy_default"
+        android:title="@string/general_setting_ers_youtube_privacy"/>
+
+    <ListPreference
+        android:key="ers_target"
+        android:dependency="ers_enabled"
+        android:entries="@array/ers_target_entries"
+        android:entryValues="@array/ers_target_values"
+        android:defaultValue="@string/ers_target_default"
+        android:title="@string/general_setting_ers_target"/>
+
+</PreferenceScreen>

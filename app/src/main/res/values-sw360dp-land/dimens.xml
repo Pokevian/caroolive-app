@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_menu_height">53dp</dimen>
+
+    <dimen name="cluster_meter_text">75dp</dimen>
+    <!--<dimen name="cluster_mater_unit_text">14sp</dimen>-->
+    <!--<dimen name="cluster_value_text">12sp</dimen>-->
+    <!--<dimen name="cluster_unit_text">8sp</dimen>-->
+
+    <dimen name="center_meter_text">16dp</dimen>
+    <dimen name="center_unit_text">8dp</dimen>
+
+    <dimen name="main_record_circle_value">30dp</dimen>
+    <dimen name="main_record_circle_unit">15dp</dimen>
+    <dimen name="main_record_title">8dp</dimen>
+    <dimen name="main_record_value">18dp</dimen>
+    <dimen name="main_record_unit">10dp</dimen>
+</resources>

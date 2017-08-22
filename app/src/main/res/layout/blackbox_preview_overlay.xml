@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_main"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/blackbox_preview_top_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_bg"
+        layout="@layout/blackbox_preview_top" />
+
+    <CheckBox
+        android:id="@+id/preview_bottom_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_detail_info"
+        android:button="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_preview_btn_ers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_margin_bottom"
+        android:layout_marginRight="@dimen/bottom_button_margine_left_right"
+        android:layout_toLeftOf="@id/preview_bottom_center"
+        android:src="@drawable/btn_ers" />
+
+    <ImageView
+        android:id="@+id/iv_preview_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_margin_bottom"
+        android:layout_marginLeft="@dimen/bottom_button_margine_left_right"
+        android:layout_toRightOf="@id/preview_bottom_center"
+        android:src="@drawable/btn_exit" />
+
+    <include
+        android:id="@+id/blackbox_preview_bottom_center_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_preview_btn_ers"
+        android:layout_alignLeft="@id/iv_preview_btn_ers"
+        android:layout_alignRight="@id/iv_preview_btn_exit"
+        android:layout_alignTop="@id/iv_preview_btn_exit"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        layout="@layout/blackbox_preview_bottom" />
+
+    <!--<FrameLayout
+        android:id="@+id/preview_ads_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <com.pokevian.app.caroo.widget.DrivingAdmobView
+            android:id="@+id/preview_admob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="gone"
+            app:valueAdSize="BANNER"
+            app:valueAdUnitId="@string/default_option_ad_mob_id_banner" />
+
+        <com.pokevian.app.caroo.widget.Adpkv320x100View
+            android:id="@+id/preview_ad_pkv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="gone" />
+    </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/iv_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_preview_btn_ers"
+        android:layout_alignRight="@id/iv_preview_btn_ers"
+        android:src="@drawable/img_dummy"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_preview_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/iv_dummy"
+        android:layout_alignTop="@id/iv_bg" >
+
+        <ImageView
+            android:id="@+id/preview_eco_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@null" />
+
+        <com.pokevian.app.smartfleet.ui.driving.SpeedMeter
+            android:id="@+id/preview_speedmeter"
+            style="@style/PreviewSpeedMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:id="@+id/preview_overspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/preview_speedmeter"
+            android:layout_alignRight="@id/preview_speedmeter"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tl_preview_lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/iv_preview_btn_exit"
+        android:layout_alignRight="@id/iv_preview_btn_exit"
+        android:layout_below="@id/blackbox_preview_top_control"
+        android:background="@null"
+        android:visibility="visible" >
+
+        <TableRow android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/cb_preview_steady_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_preview_steady_speed" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/cb_preview_idling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_preview_idling" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/cb_preview_harsh_accel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_preview_harsh_accel" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/cb_preview_harsh_brake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_preview_harsh_brake" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/iv_bg" 
+        >
+        
+        <ImageView
+        android:id="@+id/preview_record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/btn_preview_record"
+        android:visibility="invisible" />
+    </RelativeLayout>
+
+    
+    <!-- <LinearLayout 
+        android:id="@+id/ll_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/blackbox_preview_bottom_center_control"
+        >
+        
+        <ImageView
+            android:id="@+id/btn_ae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_ae" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/btn_edof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_af_edof"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/btn_ois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+            android:src="@drawable/btn_ois" />
+
+        <ImageView
+            android:id="@+id/btn_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_vs" />
+    </LinearLayout> -->
+
+</RelativeLayout>

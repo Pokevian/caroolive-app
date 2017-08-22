@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/driving_score_ranking"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/ranking_own_number"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/empty_int_value"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        tools:text="9999" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="4.3"
+        android:background="@drawable/ranking_own_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/member"
+                layout="@layout/item_round_bracket"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/myRankingCaptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drv_day_time" />
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/myRankingValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/empty_mmss_value"
+                    tools:text="2016-03-15 12:36:02" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/myRankingCaptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drv_distance" />
+
+                <TextView
+                    android:id="@+id/run_distance"
+                    style="@style/myRankingValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/empty_float_value"
+                    tools:text="999.9" />
+
+                <TextView
+                    style="@style/myRankingCaptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/distance_unit_km" />
+
+                <TextView
+                    style="@style/myRankingCaptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/drv_run_time" />
+
+                <TextView
+                    android:id="@+id/run_time"
+                    style="@style/myRankingValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/empty_mmss_value"
+                    tools:text="99:99" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/car_model_name"
+                style="@style/myRankingCaptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="로체이노베이션" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/driving_score"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="@string/empty_int_value"
+            android:textColor="#ffffff"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            tools:text="100" />
+    </LinearLayout>
+</LinearLayout>

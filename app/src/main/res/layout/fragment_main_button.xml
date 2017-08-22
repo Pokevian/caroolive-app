@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/btn_record"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_record" />
+
+    <ImageView
+        android:id="@+id/btn_statstics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_statstics" />
+
+    <!--<ImageView
+        android:id="@+id/btn_mov"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_mov" />-->
+
+    <ImageView
+        android:id="@+id/btn_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_point" />
+
+    <ImageView
+        android:id="@+id/btn_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_status" />
+
+    <!--<ImageView
+        android:id="@+id/btn_event"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_event" />-->
+
+    <!--<ImageView
+        android:id="@+id/btn_notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_notice" />-->
+
+    <ImageView
+        android:id="@+id/btn_dtc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/btn_main_dtc" />
+</LinearLayout>
+
+
+
+

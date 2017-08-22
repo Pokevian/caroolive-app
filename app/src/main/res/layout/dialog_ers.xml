@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_popup_top"
+        tools:backgorund="#ffffff">
+
+        <TextView
+            style="@style/DialogTitleText"
+            android:drawableLeft="@drawable/ico_warning"
+            android:text="@string/dialog_title_ers" />
+
+        <ImageView
+            android:id="@+id/ers_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/btn_cancel" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_popup_middle"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ers_call_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_ers_call"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="@string/btn_ers_call"
+            android:textColor="@color/ers_dialog_text_holo_dark"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/ers_sms_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_ers_sms"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="@string/btn_ers_sms"
+            android:textColor="@color/ers_dialog_text_holo_dark"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/ers_youtube_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_ers_youtube"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="@string/btn_ers_youtube"
+            android:textColor="@color/ers_dialog_text_holo_dark"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ers_message_text"
+        style="@style/DialogBottomText" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_popup_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ers_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ers_dialog_text_holo_dark"
+            android:textSize="14dp" />
+    </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:background="#00ffff">
+
+    <TextView
+        android:id="@+id/member_nm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#686868"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:background="#ffff00"
+        tools:text="슬레이어 슬레이어 슬레이어 슬레이어 슬레이어 슬레이어 슬레이어" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:background="#fff000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/residue"
+            android:textColor="#686868"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/residue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#686868"
+            android:textSize="13dp"
+            tools:text="999,999" />
+    </LinearLayout>
+</LinearLayout>

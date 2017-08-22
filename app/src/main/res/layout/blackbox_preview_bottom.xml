@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_camera_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ToggleButton
+        android:id="@+id/preview_osd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_osd_onoff"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/iv_preview_auto_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/preview_osd"
+        android:src="@drawable/btn_auto_focus_off" />
+
+    <LinearLayout
+        android:id="@+id/exposure_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_preview_auto_focus"
+        android:background="@drawable/brightness_background"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ic_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_brightness_bar" />
+
+        <SeekBar
+            android:id="@+id/preview_exposure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:progressDrawable="@drawable/seekbar_exposure"
+            android:thumb="@drawable/seekbar_thumb_exposure" />
+    </LinearLayout>
+
+</RelativeLayout>

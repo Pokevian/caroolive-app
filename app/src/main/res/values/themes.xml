@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2014. Pokevian Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Default theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- actionBarStyle -->
+        <item name="actionBarStyle">@style/actionBarStyle</item>
+        <item name="actionModeStyle">@style/actionModeStyle</item>
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <!--<item name="colorPrimaryDark">@color/primary_dark</item>-->
+        <!-- colorAccent is used as the default value for colorControlActivated, which is used to tint widgets -->
+        <!--<item name="colorAccent">@color/accent</item>-->
+
+        <!-- progressBarStyle -->
+        <item name="android:progressBarStyle">@style/progressBarStyle</item>
+    </style>
+
+    <!-- NoActionBar -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- NoActionBar -->
+    <style name="AppTheme.NoActionBar.FullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- OverlayActionBar -->
+    <style name="AppTheme.OverlayActionBar" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- OverlayActionBar.Transparent -->
+    <style name="AppTheme.OverlayActionBar.Transparent" parent="AppTheme.OverlayActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/actionBarStyle.Transparent</item>
+    </style>
+
+    <!-- Transparent -->
+    <style name="AppTheme.Transparent" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Transparent.NoDim -->
+    <style name="AppTheme.Transparent.NoDim" parent="AppTheme.Transparent">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">65%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <!-- progressBarStyle -->
+        <item name="android:progressBarStyle">@style/progressBarStyle</item>
+    </style>
+
+    <!-- Dialog.NoTitle -->
+    <style name="AppTheme.Dialog.NoTitle" parent="AppTheme.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Light.Dialog -->
+    <style name="AppTheme.Light.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowMinWidthMajor">65%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:textColorPrimary">#565656</item>
+        <item name="colorAccent">#8dbd4c</item>
+
+        <!-- progressBarStyle -->
+        <item name="android:progressBarStyle">@style/progressBarStyle</item>
+    </style>
+
+    <!-- Light.Dialog.NoTitle -->
+    <style name="AppTheme.Light.Dialog.NoTitle" parent="AppTheme.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- SystemDialog -->
+    <style name="AppTheme.Dialog.System" parent="AppTheme.Light.Dialog">
+    </style>
+
+    <style name="AppTheme.Dialog.Transparent" parent="AppTheme.Light.Dialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">60%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+    </style>
+</resources>

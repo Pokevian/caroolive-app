@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment_weekly_record"
+        android:name="com.pokevian.app.smartfleet.ui.main.WeeklyRecordFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_main_weekly_record" />
+
+    <fragment
+        android:id="@+id/fragment_driving_record"
+        android:name="com.pokevian.app.smartfleet.ui.main.DrivingRecordFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        tools:layout="@layout/fragment_main_record" />
+
+    <fragment
+        android:id="@+id/fragment_button"
+        android:name="com.pokevian.app.smartfleet.ui.main.ButtonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        tools:layout="@layout/fragment_main_button" />
+</LinearLayout>
