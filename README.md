@@ -1,7 +1,7 @@
 # caroolive-app
 - Driver service client app integrating OBD2 diagnostics and dashcam functions
-- OBD library and video blackbox library included
-- Test server connection for connected car services
+- The commercial OBD library and video blackbox library of CaroO Pro Driving Recorder included 
+- Cloud server and connection only for testing connected car services 
 
 # OBD2 related features
 - OBD library for connecting bluetooth OBD devices (ELM327 compatible) and reading PID data
@@ -51,4 +51,4 @@
 CarooLive is free software distributed under the Apache 2.0 license. 
 
 # Contacts
-Contact us at support@pokevian.com if you have questions or want to get more details. 
+Contact us at support@pokevian.com if you have questions or suggestions.  
