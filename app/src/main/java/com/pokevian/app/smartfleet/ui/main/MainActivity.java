@@ -177,8 +177,6 @@ public class MainActivity extends BaseActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         logger.trace("onCreate(): savedInstanceState=" + savedInstanceState);
-//        AutoConnectService.cancelAlarm(getApplicationContext());
-//        stopService(new Intent(this, ScreenMonitorService.class));
         AutoStartManager.stopAutoStartService(this);
 
         super.onCreate(savedInstanceState);
@@ -193,12 +191,6 @@ public class MainActivity extends BaseActivity implements
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
-
-// ian        startActivityForResult(new Intent(this, IntroActivity.class), REQUEST_INTRO);
-
-        //
-        //-------------------------------------------------------------------
-        //
 
         mBroadcastManager = LocalBroadcastManager.getInstance(this);
 
@@ -240,7 +232,6 @@ public class MainActivity extends BaseActivity implements
                     startTripListActivity();
                 }
             }
-
         }
 
         // Register vehicle receiver, so start monitoring vehicle engine statues
@@ -250,8 +241,6 @@ public class MainActivity extends BaseActivity implements
     @Override
     protected void onDestroy() {
         logger.trace("onDestroy()");
-//        mContentView.removeCallbacks(mReconnectRunnable);
-//        disconnectVehicle();
 
         unregisterBluetoothConnectionReceiver();
 
@@ -263,11 +252,6 @@ public class MainActivity extends BaseActivity implements
 
         SettingsStore.commit();
 
-        // Crash detect service
-//        stopService(new Intent(getApplicationContext(), CrashDetectService.class));
-
-//        AutoConnectService.setAlarm(getApplicationContext(), Consts.AUTO_CONNECT_WAKEUP_DELAY);
-//        startService(new Intent(this, ScreenMonitorService.class));
         AutoStartManager.startAutoStartService(this);
         super.onDestroy();
     }
@@ -305,11 +289,6 @@ public class MainActivity extends BaseActivity implements
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         logger.trace("onActivityResult(): requestCode=" + requestCode + ", resultCode=" + resultCode);
         if (REQUEST_INTRO == requestCode) {
-//            if (RESULT_OK == resultCode) {
-//
-//            } else {
-//                finish();
-//            }
         }
         if (REQUEST_USER_INFO == requestCode) {
             if (data != null && data.getBooleanExtra(AccountInfoActivity.EXTRA_GOTO_INTRO, false)) {
@@ -321,12 +300,6 @@ public class MainActivity extends BaseActivity implements
             }
         } else if (requestCode == REQUEST_SETTINGS) {
             reconnectVehicleService();
-
-//            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.container);
-//            if (fragment != null) {
-//                ((MainMenuFragment) fragment).updateLaunchButton();
-//            }
-
         } else if (REQUEST_VEHICLE_SETTING == requestCode) {
             reconnectVehicleService();
 
@@ -334,19 +307,10 @@ public class MainActivity extends BaseActivity implements
         } else if (REQUEST_BLACKBOX_SETTING == requestCode || REQUEST_TERMS == requestCode) {
             reconnectVehicleService();
 
-//            Fragment fragment = getSupportFragmentManager().findFragmentByTag("main-fragment");
-//            if (fragment != null) {
-//                ((MainMenuFragment)fragment).updateProfile();
-//            }
-
         } else if (requestCode == REQUEST_DRIVING) {
             logger.debug("onActivityResult(): REQUEST_DRIVING: data=" + data);
 
             if (resultCode == RESULT_OK) {
-//                if (Consts.ALPHA) {
-//                    sayGoodBye();
-//                }
-
                 if (data != null && data.getBooleanExtra(DrivingActivity.EXTRA_REQUEST_EXIT, false)) {
                     // Need to exit
                     finish();
@@ -384,11 +348,6 @@ public class MainActivity extends BaseActivity implements
             // Update action bar title
             mNavigationDrawerFragment.selectPreviousSegment();
         } else {
-            // jj.ahn delegate result to child fragment
-//            FragmentManager fm = getSupportFragmentManager();
-//            Fragment fragment = fm.findFragmentById(R.id.container);
-//            fragment.onActivityResult(requestCode, resultCode, data);
-
             if (resultCode == RESULT_OK) {
                 if (data != null && data.getBooleanExtra(DrivingActivity.EXTRA_REQUEST_EXIT, false)) {
                     // Need to exit
@@ -489,22 +448,9 @@ public class MainActivity extends BaseActivity implements
         } else if (MENU_ITEM_OBD_SUPPLIER == position) {
             WebUtils.launchWebLink(this, Consts.OBD_SUPPLIER_URL);
         } else if (NavigationDrawerFragment.DRAWER_MENU_GOOLE_PLUS_SELECTED == position) {
-//            try {
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/communities/110517586842207212965"));
-//                intent.setPackage("com.google.android.apps.plus");
-//                startActivity(intent);
-//            } catch  (Exception e){
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/communities/110517586842207212965")));
-//            }
             WebUtils.launchWebLink(this, Consts.SNS_GOOGLE_PLUS);
 
         } else if(NavigationDrawerFragment.DRAWER_MENU_FACEBOOK_SELECTED == position) {
-//            try {
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://groups/caroolive"));
-//                startActivity(intent);
-//            } catch(Exception e) {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/groups/caroolive")));
-//            }
             WebUtils.launchWebLink(this, Consts.SNS_FACE_BOOK);
         } else if(NavigationDrawerFragment.DRAWER_MENU_KAKAO_TALK_SELECTED == position) {
             WebUtils.launchWebLink(this, Consts.SNS_KAKAO_TALK);
@@ -788,11 +734,6 @@ public class MainActivity extends BaseActivity implements
                 menu.findItem(R.id.action_obd_reconnect).setVisible(false);
             }
 
-//            MenuItem menuItem = menu.findItem(R.id.action_share);
-//            ShareActionProvider actionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
-//            actionProvider.setShareHistoryFileName(ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
-//            actionProvider.setShareIntent(createShareIntent());
-
             restoreActionBar();
             return true;
         }
@@ -933,7 +874,6 @@ public class MainActivity extends BaseActivity implements
         startActivityForResult(intent, REQUEST_NOTICE);
         if (SettingsStore.getInstance().hasNewNoti()) {
             SettingsStore.getInstance().storeNewNotiCount(0);
-//            updateBadgeCount(SettingsStore.getInstance().getNewEventCount());
             updateBadgeCount(0);
         }
     }
@@ -947,9 +887,6 @@ public class MainActivity extends BaseActivity implements
     }
 
     protected void startRankingActivity() {
-//        Intent intent = new Intent(this, RankingActivity.class);
-//        Intent intent = new Intent(this, RankingViewActivity.class);
-
         Intent intent = new Intent(this, WebActivity.class);
         intent.putExtra(WebActivity.EXTRA_URL, ServerUrl.MEMBER_RANKING_URL);
         intent.putExtra(WebActivity.EXTRA_TITLE, getString(R.string.weekly_ranking));
@@ -974,8 +911,6 @@ public class MainActivity extends BaseActivity implements
     }
 
     protected void startDrivingPatternActivity() {
-//        Intent intent = new Intent(this, DrivingPatternActivity.class);
-
         Intent intent = new Intent(this, WebActivity.class);
         intent.putExtra(WebActivity.EXTRA_URL, ServerUrl.DRIVING_PATTERN_URL);
         intent.putExtra(WebActivity.EXTRA_TITLE, getString(R.string.drv_pattern));
@@ -984,8 +919,6 @@ public class MainActivity extends BaseActivity implements
     }
 
     protected void startHofActivity() {
-//        Intent intent = new Intent(this, HofActivity.class);
-
         Intent intent = new Intent(this, WebActivity.class);
         intent.putExtra(WebActivity.EXTRA_URL, ServerUrl.HALL_OF_FAME);
         intent.putExtra(WebActivity.EXTRA_TITLE, getString(R.string.hof));
@@ -1013,23 +946,7 @@ public class MainActivity extends BaseActivity implements
         sendBroadcast(badgeIntent);
     }
 
-    private void sayHello() {
-//        Calendar now = Calendar.getInstance();
-//        int hour = now.get(Calendar.HOUR_OF_DAY);
-//        if (5 <= hour && hour <= 9) {
-//            Intent service = new Intent(this, SoundEffectService.class);
-//            service.putExtra(SoundEffectService.EXTRA_CMD, SoundEffectService.TTS_SPEAK);
-//            service.putExtra(SoundEffectService.EXTRA_TTS_TEXT, getString(R.string.tts_hello_driving_work));
-//            startService(service);
-//        } else {
-//            Intent service = new Intent(this, SoundEffectService.class);
-//            service.putExtra(SoundEffectService.EXTRA_CMD, SoundEffectService.TTS_SPEAK);
-//            service.putExtra(SoundEffectService.EXTRA_TTS_TEXT, getString(R.string.tts_hello_driving_default));
-//            startService(service);
-//        }
-    }
-
-    private void registerBluetoothConnectionReceiver() {
+   private void registerBluetoothConnectionReceiver() {
         IntentFilter filter = new IntentFilter();
         filter.addAction(BluetoothDevice.ACTION_ACL_CONNECTED);
         filter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
@@ -1150,21 +1067,6 @@ public class MainActivity extends BaseActivity implements
         finish();
     }
 
-    private void sayGoodBye() {
-//        Calendar now = Calendar.getInstance();
-//        int hour = now.get(Calendar.HOUR_OF_DAY);
-//        if (17 <= hour && hour <= 21) {
-//            Intent service = new Intent(this, SoundEffectService.class);
-//            service.putExtra(SoundEffectService.EXTRA_CMD, SoundEffectService.TTS_SPEAK);
-//            service.putExtra(SoundEffectService.EXTRA_TTS_TEXT, getString(R.string.tts_googbye_driving_home));
-//            startService(service);
-//        } else {
-//            Intent service = new Intent(this, SoundEffectService.class);
-//            service.putExtra(SoundEffectService.EXTRA_CMD, SoundEffectService.TTS_SPEAK);
-//            service.putExtra(SoundEffectService.EXTRA_TTS_TEXT, getString(R.string.tts_goodbye_driving_default));
-//            startService(service);
-//        }
-    }
 
     private void doShare() {
         File imageFile = getShareImageFile();
@@ -1193,11 +1095,6 @@ public class MainActivity extends BaseActivity implements
     }
 
     private Intent createShareIntent() {
-//        View view = findViewById(R.id.container);
-//        view.buildDrawingCache();
-//
-//        Bitmap bitmap = view.getDrawingCache();
-
         File imageFile = getShareImageFile();
         logger.trace("createShareIntent#" + imageFile.getAbsolutePath() );
         FileOutputStream fos = null;
@@ -1242,8 +1139,6 @@ public class MainActivity extends BaseActivity implements
         ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
 
         try {
-//            ComponentName topActivity = am.getRunningTasks(1).get(0).topActivity;
-//            Logger.getLogger(TAG).trace("topActivity#" + topActivity.getClassName() + "@" + topActivity.getPackageName());
             return !am.getRunningTasks(1).get(0).topActivity.getPackageName().equals(getPackageName());
         } catch (Exception e) {
             Logger.getLogger(TAG).warn("isBackground#" + e.getMessage());

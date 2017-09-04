@@ -1,7 +1,6 @@
 package com.pokevian.app.smartfleet.ui.main;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -21,10 +19,8 @@ import android.widget.LinearLayout;
 import com.pokevian.app.smartfleet.R;
 import com.pokevian.app.smartfleet.model.Rank;
 import com.pokevian.app.smartfleet.setting.SettingsStore;
-import com.pokevian.app.smartfleet.ui.driving.DrivingActivity;
 import com.pokevian.app.smartfleet.ui.rank.GetRankingDialogCallback;
 import com.pokevian.app.smartfleet.ui.rank.GetRankingDialogFragment;
-import com.pokevian.app.smartfleet.ui.rank.HofActivity;
 
 import org.apache.log4j.Logger;
 
@@ -85,7 +81,7 @@ public class DrivingRecordFragment extends Fragment implements ViewPager.OnPageC
         PagerAdapter adapter = new PagerAdapter(getChildFragmentManager());
 
         adapter.addFragment(mLevelRecordFragment);
-        adapter.addFragment(mFuelCostFragment/*FuelCostFragment.getTop10Request(mDrivingRecord)*/);
+        adapter.addFragment(mFuelCostFragment);
         adapter.addFragment(mPointRecordFragment);
 
         mViewPager.setAdapter(adapter);
@@ -180,7 +176,6 @@ public class DrivingRecordFragment extends Fragment implements ViewPager.OnPageC
                     mFuelCostFragment.onUpdate(mDrivingRecord);
                     mLevelRecordFragment.onUpdate(mDrivingRecord);
                     mPointRecordFragment.onUpdate(mDrivingRecord);
-//                mViewPager.getAdapter().notifyDataSetChanged();
                 }
             });
         }
@@ -204,8 +199,6 @@ public class DrivingRecordFragment extends Fragment implements ViewPager.OnPageC
 
         @Override
         public Fragment getItem(int position) {
-//            Fragment fragment = mFragments.get(position);
-//            ((OnUpdateListener) fragment).onUpdate(mDrivingRecord);
             return mFragments.get(position);
         }
 
@@ -214,11 +207,6 @@ public class DrivingRecordFragment extends Fragment implements ViewPager.OnPageC
             return mFragments.size();
         }
 
-//        @Override
-//        public int getItemPosition(Object object) {
-////            return super.getItemPosition(object);
-//            return POSITION_NONE;
-//        }
     }
 
     public interface OnUpdateListener {
@@ -229,14 +217,5 @@ public class DrivingRecordFragment extends Fragment implements ViewPager.OnPageC
        TypedArray circles = getResources().obtainTypedArray(R.array.circle_level);
        imageView.setImageResource(circles.getResourceId(Math.round(index), 0));
    }
-
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    protected Drawable getDrawable(int resId) {
-//        if (Build.VERSION_CODES.LOLLIPOP > Build.VERSION.SDK_INT) {
-//            return getResources().getDrawable(resId);
-//        }
-//
-//        return getResources().getDrawable(resId, null);
-//    }
 
 }

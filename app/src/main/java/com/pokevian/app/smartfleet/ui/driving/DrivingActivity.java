@@ -56,6 +56,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.pokevian.app.smartfleet.BuildConfig;
 import com.pokevian.app.smartfleet.R;
 import com.pokevian.app.smartfleet.model.ErsTarget;
 import com.pokevian.app.smartfleet.model.Vehicle;
@@ -157,19 +158,14 @@ public final class DrivingActivity extends BaseActivity
     private int mPreviewSpeedControlW = 0;
     private boolean mShowDetailInfo;
 
-//    private  Drawable mGreenDrawable;
-//    private  Drawable mYellowDrawable;
-//    private Drawable mRedDrawable;
-
     private boolean mLaunchNavi;
-//    private boolean mIsgSupport;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         logger.trace("onCreate(): savedInstanceState=" + savedInstanceState);
 
-        if (SettingsStore.getInstance().isBlackboxEnabled()) {
+        if (BuildConfig.INCLUDE_BLACKBOX && SettingsStore.getInstance().isBlackboxEnabled()) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
         AutoStartManager.stopAutoStartService(this);

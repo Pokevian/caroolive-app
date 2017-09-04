@@ -164,16 +164,6 @@ public class NavigationDrawerFragment extends Fragment {
             }
         });
 
-        /*
-        view.findViewById(R.id.btn_kt).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mCallbacks != null) {
-                    mCallbacks.onNavigationDrawerItemSelected(DRAWER_MENU_KAKAO_TALK_SELECTED);
-                }
-            }
-        });
-        */
 
         String accountEmail = settingsStore.getLoginId();
         TextView emailText = (TextView) view.findViewById(R.id.account_email);
@@ -206,9 +196,6 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerListView.setAdapter(adapter);
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 
-        // Select either the default item (0) or the last selected item.
-//        selectItem(mCurrentSelectedPosition);
-
         PackageInfo pkgInfo = getPackageInfo();
         if (pkgInfo != null) {
             ((TextView) view.findViewById(R.id.version)).setText(String.format("v%s", pkgInfo.versionName));
@@ -220,12 +207,6 @@ public class NavigationDrawerFragment extends Fragment {
         if (mBadgeIndex >= 0) {
             updateBadge(view.findViewById(R.id.account_image));
         }
-
-//        if (ServerUrl.SERVICE_SERVER_BASE_URL.contains("www.caroolive.com")) {
-//            view.findViewById(R.id.server).setVisibility(View.GONE);
-//        } else {
-//            ((TextView) view.findViewById(R.id.server)).setText(ServerUrl.SERVICE_SERVER_BASE_URL);
-//        }
 
         if (!BuildConfig.INCLUDE_USER_CHANNEL) {
             view.findViewById(R.id.ll_channel).setVisibility(View.GONE);
@@ -577,14 +558,7 @@ public class NavigationDrawerFragment extends Fragment {
             if (position == 0) {
                 boolean hasNoti = SettingsStore.getInstance().hasNewNoti();
                 convertView.findViewById(R.id.row_badge).setVisibility(hasNoti ? View.VISIBLE : View.GONE);
-            } /*else if (position == 2) {
-                Vehicle vehicle = SettingsStore.getInstance().getVehicle();
-                if (vehicle != null && vehicle.getProdYear() <= 0) {
-                    convertView.findViewById(R.id.update).setVisibility(View.VISIBLE);
-                } else {
-                    convertView.findViewById(R.id.update).setVisibility(View.GONE);
-                }
-            }*/
+            }
 
             return convertView;
         }

@@ -193,15 +193,6 @@
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
 
         <activity
-            android:name=".ui.rank.RankingActivityNew"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.rank.RankingActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.rank.HofActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.pokevian.app.smartfleet.ui.pattern.DrivingPatternActivity"
             android:screenOrientation="portrait" />
         <activity

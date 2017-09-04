@@ -30,7 +30,6 @@ public class ButtonFragment extends Fragment implements View.OnClickListener {
 
     private static final int REQUEST_RECORD = 1;
     private static final int REQUEST_STATSTICS = 2;
-    private static final int REQUEST_MOV = 3;
 
     private View mView;
 
@@ -58,9 +57,6 @@ public class ButtonFragment extends Fragment implements View.OnClickListener {
 
         view.findViewById(R.id.btn_record).setOnClickListener(this);
         view.findViewById(R.id.btn_statstics).setOnClickListener(this);
-//        view.findViewById(R.id.btn_mov).setOnClickListener(this);
-//        view.findViewById(R.id.btn_event).setOnClickListener(this);
-//        view.findViewById(R.id.btn_notice).setOnClickListener(this);
         view.findViewById(R.id.btn_point).setOnClickListener(this);
         view.findViewById(R.id.btn_status).setOnClickListener(this);
         view.findViewById(R.id.btn_dtc).setOnClickListener(this);
@@ -70,9 +66,6 @@ public class ButtonFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-        Logger.getLogger(TAG).debug("onActivityResult(): requestCode=" + requestCode + ", resultCode=" + resultCode);
-
         if (resultCode == Activity.RESULT_OK) {
             if (data != null && data.getBooleanExtra(DrivingActivity.EXTRA_REQUEST_EXIT, false)) {
                 // Need to exit
@@ -100,14 +93,7 @@ public class ButtonFragment extends Fragment implements View.OnClickListener {
             Intent intent = new Intent(getActivity(), TripMonitorActivity.class);
             intent.putExtra(TripMonitorActivity.EXTRA_POSITION, 1);
             startActivityForResult(intent, REQUEST_STATSTICS);
-        } /*else if (R.id.btn_mov == id) {
-            Intent intent = new Intent(getActivity(), VideoListActivity.class);
-            startActivityForResult(intent, REQUEST_MOV);
-        }*/ /*else if (R.id.btn_event == id) {
-            ((MainActivity)getActivity()).startEventActivity();
-        }*/ /*else if (R.id.btn_notice == id) {
-            ((MainActivity)getActivity()).startNoticeActivity();
-        }*/ else if (R.id.btn_point == id) {
+        }  else if (R.id.btn_point == id) {
             ((MainActivity)getActivity()).startMyPointActivity();
         } else if (R.id.btn_status == id) {
             ((MainActivity)getActivity()).startCarStatusCheckActivity();
@@ -117,8 +103,7 @@ public class ButtonFragment extends Fragment implements View.OnClickListener {
     }
 
     private void checkNotificatioin() {
-//        mView.findViewById(R.id.btn_event).setSelected(SettingsStore.getInstance().hasNewEvent());
-//        mView.findViewById(R.id.btn_notice).setSelected(SettingsStore.getInstance().hasNewNoti());
+
     }
 
     private void registerNotificationReceiver() {

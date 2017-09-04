@@ -442,15 +442,6 @@ public class TripManager {
             }
         }
 
-//        if (obdData.isValid(KEY.WARN_MIL_ON)) {
-//            if (obdData.getBoolean(KEY.WARN_MIL_ON)) {
-//                event.setMilOn(ThreeState.Y);
-//                event.setDtc(obdData.getString(KEY.SAE_DTC, null));
-//            } else {
-//                event.setMilOn(ThreeState.N);
-//                event.setDtc(null);
-//            }
-//        }
         if (obdData.getBoolean(KEY.WARN_MIL_ON, false)) {
             event.setMilOn(ThreeState.Y);
             event.setDtc(obdData.getString(KEY.WARN_DTC));
@@ -498,8 +489,6 @@ public class TripManager {
                     Intent service = new Intent(mContext, DataUploadService.class);
                     service.putExtra(DataUploadService.EXTRA_DATA, data);
                     mContext.startService(service);
-
-//                    logger.debug("upload vehicle data...");
                 }
             }
         }

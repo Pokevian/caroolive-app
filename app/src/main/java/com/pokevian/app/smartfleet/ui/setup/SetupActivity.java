@@ -140,16 +140,11 @@ public class SetupActivity extends BaseActivity
     @Override
     public void onBackPressed() {
         FragmentManager fm = getSupportFragmentManager();
-        Logger.getLogger(TAG).trace("onBackPressed#" + fm.getBackStackEntryCount());
-//        Fragment fragment = fm.findFragmentByTag(SignInFragment.TAG);
-//        if (fragment != null) {
-//            finish();
-//        }
+
         if (fm.getBackStackEntryCount() > 0) {
             fm.popBackStack();
         } else {
             super.onBackPressed();
-//            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         }
     }
 
@@ -167,7 +162,6 @@ public class SetupActivity extends BaseActivity
         fm.beginTransaction()
                 .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
                 .replace(R.id.container, fragment, SignInFragment.TAG)
-//                .addToBackStack(null)
                 .commit();
     }
 
@@ -194,16 +188,6 @@ public class SetupActivity extends BaseActivity
             LoadVehicleDialogFragment.newInstance().show(fm, LoadVehicleDialogFragment.TAG);
         }
 
-//        if (!mSettingsStore.isValidVehicle()) {
-//            FragmentManager fm = getSupportFragmentManager();
-//            DialogFragment fragment = AlertDialogFragment.newInstance(
-//                    getString(R.string.dialog_title_need_register_vehicle),
-//                    getString(R.string.dialog_message_need_register_vehicle),
-//                    getString(R.string.btn_no), getString(R.string.btn_yes));
-//            fm.beginTransaction().add(fragment, "no-vehicle-registered-dialog").commitAllowingStateLoss();
-//        } else {
-//            finish();
-//        }
     }
 
     @Override

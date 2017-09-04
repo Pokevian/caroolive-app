@@ -74,6 +74,7 @@ public class ObdManager implements OnObdStateListener, OnObdDataListener, OnObdE
         LocationWrapper.FASTEST_INTERVAL = Consts.LOCATION_FASTEST_INTERVAL;
 
         mProcessor = new ObdPostProcessor(context);
+        PostProcessor.setCustomProcessor(mProcessor);
 
         HandlerThread thread = new HandlerThread("obd-engine");
         thread.start();

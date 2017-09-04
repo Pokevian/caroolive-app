@@ -78,18 +78,9 @@ public class BaseDrivingOnActivity extends BaseActivity implements AlertDialogFr
     }
 
     private void onVehicleEngineStatusChanged(int ves) {
-        Logger.getLogger(TAG).trace("onVehicleEngineStatusChanged(): ves=" + VehicleEngineStatus.toString(ves));
-
-//        KeyguardManager km = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-//        Logger.getLogger(TAG).info("KEYGUARD_SERVICE#" + km.inKeyguardRestrictedInputMode() + "@" + isPaused());
-//        if (km.inKeyguardRestrictedInputMode()) {
-//            finish();
-//        }
-
         if (VehicleEngineStatus.isOnDriving(ves)) {
             if (isPaused()) {
                 finishIfNeeded();
-                Logger.getLogger(TAG).trace("finish@onVehicleEngineStatusChanged()");
             } else {
                 FragmentManager fm = getSupportFragmentManager();
                 DialogFragment fragment = (DialogFragment) fm.findFragmentByTag(DrivingOnDialogFragment.TAG);
@@ -143,9 +134,7 @@ public class BaseDrivingOnActivity extends BaseActivity implements AlertDialogFr
             if (VehicleDataBroadcaster.ACTION_VEHICLE_ENGINE_STATUS_CHANGED.equals(action)) {
                 onVehicleEngineStatusChanged(intent.getIntExtra(VehicleDataBroadcaster.EXTRA_VEHICLE_ENGINE_STATUS,
                         VehicleEngineStatus.UNKNOWN));
-            }/* else if (DrivingActivity.ACTION_GOTO_DRIVING.equals(action)) {
-                LocalBroadcastManager.getInstance(this).sendBroadcast(new Intent(ACTION_GOTO_DRIVING));
-            }*/
+            }
         }
     };
 }

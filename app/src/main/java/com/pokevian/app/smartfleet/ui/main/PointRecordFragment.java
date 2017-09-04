@@ -57,11 +57,6 @@ public class PointRecordFragment extends Fragment implements DrivingRecordFragme
         setText(mView.findViewById(R.id.circle_value), R.string.empty_int_value);
         setText(mView.findViewById(R.id.circle_unit), R.string.drv_point);
 
-//        init(R.id.record_1, R.drawable.ic_main_ranking, R.string.rank_total);
-//        init(R.id.record_2, R.drawable.ic_main_economy, R.string.rank_eco_speed);
-//        init(R.id.record_3, R.drawable.ic_main_fuelcut, R.string.rank_fuelcut);
-//        init(R.id.record_4, R.drawable.ic_main_hash, R.string.rank_harsh);
-
         init(R.id.record_1, R.drawable.ic_main_ranking, R.string.rank_total, R.string.empty_int_value, R.string.main_rank_position);
         init(R.id.record_2, R.drawable.ic_main_driving_time, R.string.drv_run_time, R.string.empty_hmmss_value, 0);
         init(R.id.record_3, R.drawable.ic_main_driving_distance, R.string.drv_distance, R.string.empty_int_value, R.string.distance_unit_km);
@@ -93,16 +88,6 @@ public class PointRecordFragment extends Fragment implements DrivingRecordFragme
             ((TextView) v.findViewById(R.id.record_unit)).setText(unit);
         }
     }
-
-//    private void init(int resId, int drawable, int title) {
-//        View v = mView.findViewById(resId);
-//        TextView tv = (TextView) v.findViewById(R.id.record_title);
-//        tv.setText(title);
-//        tv.setCompoundDrawablesWithIntrinsicBounds(drawable, 0, 0, 0);
-//
-//        setText(v.findViewById(R.id.record_value), R.string.empty_int_value);
-//        setText(v.findViewById(R.id.record_unit), R.string.main_rank_position);
-//    }
 
     private void update(int resId, int value) {
         View view = mView.findViewById(resId);

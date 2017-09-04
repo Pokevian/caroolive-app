@@ -54,15 +54,6 @@ public class ObdPostProcessor extends CustomProcessor {
 
     public ObdPostProcessor(Context context) {
         mContext = context.getApplicationContext();
-
-//        int calcMask = CALC_LT_IDLING | CALC_HARSH_ACCEL | CALC_HARSH_BRAKE
-//                | CALC_ECO_SPEED | CALC_OVERSPEED | CALC_LT_OVERSPEED
-//                | CALC_WARNING | CALC_GEAR_SHIFT_N | CALC_USER
-//                | CALC_HIGH_RPM;
-//        setCalcMask(calcMask);
-//
-//        int tripMask = TRIP_USER;
-//        setTripMask(tripMask);
     }
 
     public void resetTrip(OnTripResetCallback callback) {
@@ -83,12 +74,12 @@ public class ObdPostProcessor extends CustomProcessor {
     }
 
     public void onLocationChanged(Location location) {
+
         synchronized (mDataLock) {
             // Filter out condition
             boolean filterOut = mLastLocation.getLatitude() == location.getLatitude()
                     && mLastLocation.getLongitude() == location.getLongitude()
                     && mLastLocation.getAccuracy() == location.getAccuracy();
-
             if (!filterOut) {
                 mLastLocation.set(location);
             }
